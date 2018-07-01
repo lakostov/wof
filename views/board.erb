@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/style.css" />
+<title>Wheel Of Fortune</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="exit">
+	<a id="btn_exit" href="/">II</a>
+    </div>
+	<h1 class="gray">WHEEL OF FORTUNE</h1>
+	<div id="board">
+		<div id="word">
+			<% @game.resulta.each do |e| %>
+			<% if e == " " %>
+			<span class="empty">&nbsp;</span>
+			<% else %>
+			<% if e != "_" %>
+			<span class="open_card"><%=e%></span>
+			<% else %>
+			<span class="card">&nbsp;</span>
+			<% end %>
+			<% end %>
+			<% end %>
+		</div>
+	</div>
+	<span class="clue">Clue: <%=@game.secret_clue%></span>
+	<% if @game.spin_flag %>
+	<div id="game_tools">
+	<% if !$solve %><span class="small">Reward: <%=@game.reward%> points for every letter guessed.</span><% end %>
+	<ul id="game_info_wrapper">
+     <li class="game_info">Total score: <%=@game.score%></li>
+     <li class="game_info">Turns left: <%=@game.check_last_turn%></li>
+     <li class="game_info">Letters tried: <% @game.resultb.sort.each do |b| %><%=b%> <% end %></li>
+	</ul>
+	</div>
+	 <% if $solve %>
+     <div id="form_wrapper">
+		<form action="/board" method="post">
+		<ul>
+        <li><span class="small"><%=@game.message%></span></li>
+        <li><input id="solve" type="text" name="guess" autocomplete="off"><input id="solve_submit" type="submit" value="Solve the puzzle"></li>
+        </ul>
+        </form>
+	</div>
+    <% else %>
+	<div id="form_wrapper">
+		<form action="/board" method="post">
+		<ul>
+        <li><span class="small"><%=@game.message%></span></li>
+        <li><input id="guess" type="text" name="guess" maxlength="1" autocomplete="off"><input class="btn_stretch" type="submit" value="Make a guess"></li>
+        </ul>
+        </form>
+	</div>
+	<% end %>
+	<% else %>
+	<div id="game_tools">
+	<ul id="game_info_wrapper">
+      <% if !@game.web_initial %><li class="game_info">Guessed: <%=@game.num_guessed%></li><% end %>
+     <li class="game_info">Total score: <%=@game.score%></li>
+     <li class="game_info">Turns left: <%=@game.check_last_turn%></li>
+	</ul>
+	</div>
+     <div id="spin_btn_container">
+     	<a id="spin_for_reward" href="/spin">Spin the Wheel!</a><% if !@game.web_initial %><a id="solve_btn" href="/board/solve">Solve the puzzle</a><% end %>
+     </div>
+	<% end %>
+</div>
+</body>
+
+</html>

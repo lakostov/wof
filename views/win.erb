@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/style.css" />
+<title>Wheel Of Fortune</title>
+</head>
+
+<body>
+<% @game.set_global_games_played %>
+<div id="container">
+<div id="win">
+<% if @game.win %><h1 class="orange">YOU WON!</h1><% @game.set_games_won %><% else %><h1 class="gray">You lost!</h1><% @game.score=0 %><% end %>
+<% @game.show_phrase %>
+<div <% if @game.win %>id="board_won"<% else %>id="board_lost"<% end %>>
+		<div id="word">
+			<% @game.resulta.each do |e| %>
+			<% if e == " " %>
+			<span class="empty">&nbsp;</span>
+			<% else %>
+			<% if e != "_" %>
+			<span class="open_card"><%=e%></span>
+			<% else %>
+			<span class="card">&nbsp;</span>
+			<% end %>
+			<% end %>
+			<% end %>
+		</div>
+	</div>
+    <span class="clue">Total score: <%=@game.score%></span>
+    <% @game.resetgame %>
+    <% @game.init_word_board%>
+     <div id="spin_btn_container">
+     	<a id="btn_back" href="/">Back to game</a>
+     </div>
+</div>
+</div>
+</body>
+</html>

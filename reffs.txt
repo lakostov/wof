@@ -1,0 +1,5 @@
+Rspec syntax configuration xplicitly-enable-both-syntaxes https://relishapp.com/rspec/rspec-expectations/v/3-4/docs/syntax-configuration#explicitly-enable-both-syntaxes
+Image start menu:   https://pmcdeadline2.files.wordpress.com/2012/10/wheeloffortune__121029164437.jpg
+Image wheel: https://upload.wikimedia.org/wikipedia/commons/c/cb/WheelofFortuneSeason30-Round4.png
+Statistics chart: http//www.chartjs.org/
+Paul Morie (2015), Accessing elements of nested hashes in ruby https://stackoverflow.com/questions/5544858/accessing-elements-of-nested-hashes-in-ruby/34624909

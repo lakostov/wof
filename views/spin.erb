@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>Wheel Of Fortune</title>
+<link rel="stylesheet" type="text/css" href="/style.css" />
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script>
+(function (cjs, an) {
+var p; // shortcut to reference prototypes
+var lib={};var ss={};var img={};
+lib.ssMetadata = [];
+// symbols:
+(lib.Wheel = function() {
+	this.initialize(img.Wheel);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,638,638);// helper functions:
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
+(lib.Symbol2 = function(mode,startPosition,loop) {
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.instance = new lib.Wheel();
+	this.instance.parent = this;
+	this.instance.setTransform(0,36.9,0.475,0.475,-7);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+}).prototype = getMCSymbolPrototype(lib.Symbol2, new cjs.Rectangle(0,0.1,337.7,337.7), null);
+(lib.btn_spin = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FFFFFF").s().p("AAgB1IhCiEIACAcIAABoIg2AAIAAjpIA2AAIBDCGIgCgYIAAhuIA2AAIAADpg");
+	this.shape.setTransform(77,24.3);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#FFFFFF").s().p("AgaB1IAAjpIA1AAIAADpg");
+	this.shape_1.setTransform(60.5,24.3);
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#FFFFFF").s().p("AhHB1IAAjpIBDAAQAhAAAWATQAUAUAAAhQAAAigUATQgWATglAAIgJAAIAABZgAgRgQQARAAAIgHQAJgGAAgOQAAgQgJgGQgHgGgSAAg");
+	this.shape_2.setTransform(46.5,24.3);
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#FFFFFF").s().p("Ag2BxIAAg3QAZAPARAAQAKAAAFgFQAGgGAAgJQAAgHgFgGQgEgHgLgIQgbgVgNgRQgMgSAAgXQAAgeATgTQATgUAeABQAWAAAWAJIAAA1QgXgNgPgBQgKAAgFAGQgFAEAAAIQAAAPAZATQAQALAQASQAQAVAAAZQAAAfgVAUQgVATggAAQgWAAgWgKg");
+	this.shape_3.setTransform(29.1,24.3);
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.f().s("#333333").ss(2,1,1).p("Am4jvINxAAQBkAAAABkIAAEXQAABkhkAAItxAAQhkAAAAhkIAAkXQAAhkBkAAg");
+	this.shape_4.setTransform(54.1,24);
+	this.shape_5 = new cjs.Shape();
+	this.shape_5.graphics.f("#CC0000").s().p("Am4DwQhkAAAAhkIAAkXQAAhkBkAAINxAAQBkAAAABkIAAEXQAABkhkAAg");
+	this.shape_5.setTransform(54.1,24);
+	this.shape_6 = new cjs.Shape();
+	this.shape_6.graphics.f("#FF0000").s().p("Am4DwQhkAAAAhkIAAkXQAAhkBkAAINxAAQBkAAAABkIAAEXQAABkhkAAg");
+	this.shape_6.setTransform(54.1,24);
+	this.shape_7 = new cjs.Shape();
+	this.shape_7.graphics.f("#990000").s().p("Am4DwQhkAAAAhkIAAkXQAAhkBkAAINxAAQBkAAAABkIAAEXQAABkhkAAg");
+	this.shape_7.setTransform(54.1,24);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).to({state:[{t:this.shape_6},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]},1).to({state:[{t:this.shape_7},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]},1).wait(1));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-1,-1,110.2,50);
+(lib.btn_back = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FFFFFF").s().p("AgeAvIAAhdIAUAAQAUAAALAMQAKALAAAXQAAARgFAKQgFALgKAFQgJAEgLAAgAgJAbQAJgBAEgGQAEgGAAgOQAAgHgBgGQgCgFgCgDQgDgEgCAAIgHgBg");
+	this.shape.setTransform(115.5,16.6);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#FFFFFF").s().p("AAIAvIgQgrIgBAAIAAArIgVAAIAAhdIAZAAQAOAAAJAHQAJAIAAAOQAAAHgDAGQgEAFgGAEIARAqgAgJgGQAOAAAAgKQAAgGgEgDQgCgDgIAAg");
+	this.shape_1.setTransform(108.2,16.6);
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#FFFFFF").s().p("AAPAvIgEgQIgWAAIgDAQIgWAAIAZhdIAXAAIAZBdgAgHAOIAOAAQgFgUgCgTIAAAAQgCAUgFATg");
+	this.shape_2.setTransform(100.3,16.6);
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#FFFFFF").s().p("AgZAkQgJgNAAgXQAAgXAJgNQAJgNAQAAQAQAAAKANQAJANAAAXQAAAXgJANQgJAOgRAAQgQAAgJgOgAgLAAQAAAQADAGQADAGAFAAQAFAAAEgGQADgGAAgQQAAgbgMAAQgLAAAAAbg");
+	this.shape_3.setTransform(92.6,16.6);
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.f("#FFFFFF").s().p("AgdAvIAAhdIAWAAQASAAAJAHQAIAIAAALQAAANgMAHQAOAFAAAPQAAAMgJAIQgJAHgNAAgAgHAdQAHAAAEgDQAEgCAAgGQAAgKgNAAIgCAAgAgHgIQANAAAAgKQAAgGgDgCQgDgCgHAAg");
+	this.shape_4.setTransform(85.1,16.6);
+	this.shape_5 = new cjs.Shape();
+	this.shape_5.graphics.f("#FFFFFF").s().p("AgZAkQgJgNAAgXQAAgXAJgNQAJgNAQAAQAQAAAKANQAJANAAAXQAAAXgJANQgJAOgRAAQgQAAgJgOgAgLAAQAAAQADAGQADAGAFAAQAFAAAEgGQADgGAAgQQAAgbgMAAQgLAAAAAbg");
+	this.shape_5.setTransform(73.5,16.6);
+	this.shape_6 = new cjs.Shape();
+	this.shape_6.graphics.f("#FFFFFF").s().p("AgKAvIAAhIIgPAAIAAgVIAzAAIAAAVIgPAAIAABIg");
+	this.shape_6.setTransform(66.7,16.6);
+	this.shape_7 = new cjs.Shape();
+	this.shape_7.graphics.f("#FFFFFF").s().p("AAIAvIgRgnIgBAAIAAAnIgVAAIAAhdIAVAAIAAAsIABAAIATgsIAWAAIgVAvIAVAug");
+	this.shape_7.setTransform(56.9,16.6);
+	this.shape_8 = new cjs.Shape();
+	this.shape_8.graphics.f("#FFFFFF").s().p("AgPAkQgLgOAAgWQAAgVALgOQAMgOARAAQAHAAAGACIAAAWQgGgCgGAAQgIAAgGAIQgEAIAAALQAAAMAEAIQAGAHAJAAQAFAAAGgCIAAAWQgHADgFAAQgSAAgMgOg");
+	this.shape_8.setTransform(49.7,16.6);
+	this.shape_9 = new cjs.Shape();
+	this.shape_9.graphics.f("#FFFFFF").s().p("AAPAvIgEgQIgWAAIgDAQIgWAAIAZhdIAXAAIAZBdgAgHAOIAOAAQgFgUgCgTIAAAAQgCAUgFATg");
+	this.shape_9.setTransform(42.9,16.6);
+	this.shape_10 = new cjs.Shape();
+	this.shape_10.graphics.f("#FFFFFF").s().p("AgdAvIAAhdIAWAAQASAAAJAHQAIAIAAALQAAANgMAHQAOAFAAAPQAAAMgJAIQgJAHgNAAgAgHAdQAHAAAEgDQAEgCAAgGQAAgKgNAAIgCAAgAgHgIQANAAAAgKQAAgGgDgCQgDgCgHAAg");
+	this.shape_10.setTransform(35.5,16.6);
+	this.shape_11 = new cjs.Shape();
+	this.shape_11.graphics.f("#FFFFFF").s().p("AgZAkQgJgNAAgXQAAgXAJgNQAJgNAQAAQAQAAAKANQAJANAAAXQAAAXgJANQgJAOgRAAQgQAAgJgOgAgLAAQAAAQADAGQADAGAFAAQAFAAAEgGQADgGAAgQQAAgbgMAAQgLAAAAAbg");
+	this.shape_11.setTransform(24,16.6);
+	this.shape_12 = new cjs.Shape();
+	this.shape_12.graphics.f("#FFFFFF").s().p("AgYAlQgKgNABgYQgBgYAKgMQAJgNARAAQAUAAAJAWIgUAIIgFgGQgCgDgEAAQgFAAgDAHQgDAHAAAOQAAAPAEAGQADAHAFAAQALAAABgPIgKAAIAAgSIAfAAIAAAPQABATgJAKQgJALgPAAQgRAAgJgNg");
+	this.shape_12.setTransform(15.9,16.6);
+	this.shape_13 = new cjs.Shape();
+	this.shape_13.graphics.f().s("#000000").ss(1,1,1).p("AohigIRDAAQATAAAPACQASADANAGQANAGAIAKQASASAAAeIAACqQAAAfgSATQgLANgVAGQgJADgLABQgPADgTAAIxDAAQggAAgWgHQgEgBgEgCQgqgSAAgwIAAiqQAAguAogSQABAAABgBQAYgKAmAAg");
+	this.shape_13.setTransform(65,16.1);
+	this.shape_14 = new cjs.Shape();
+	this.shape_14.graphics.f("#CC0000").s().p("AohChQggAAgVgHIgJgDQgqgSAAgvIAAiqQAAgvAogRIACgBQAYgLAmAAIRDAAQASAAAQADQASACANAHQANAFAIAKQASASgBAfIAACqQABAegSASQgLAOgVAGQgKADgKACQgQACgSAAg");
+	this.shape_14.setTransform(65,16.1);
+	this.shape_15 = new cjs.Shape();
+	this.shape_15.graphics.f("#FF0000").s().p("AohChQggAAgVgHIgJgDQgqgSAAgvIAAiqQAAgvAogRIACgBQAYgLAmAAIRDAAQASAAAQADQASACANAHQANAFAIAKQASASgBAfIAACqQABAegSASQgLAOgVAGQgKADgKACQgQACgSAAg");
+	this.shape_15.setTransform(65,16.1);
+	this.shape_16 = new cjs.Shape();
+	this.shape_16.graphics.f("#990000").s().p("AohChQggAAgVgHIgJgDQgqgSAAgvIAAiqQAAgvAogRIACgBQAYgLAmAAIRDAAQASAAAQADQASACANAHQANAFAIAKQASASgBAfIAACqQABAegSASQgLAOgVAGQgKADgKACQgQACgSAAg");
+	this.shape_16.setTransform(65,16.1);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_14},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).to({state:[{t:this.shape_15},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]},1).to({state:[{t:this.shape_16},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]},1).wait(1));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-1,-1,131.9,34.2);
+(lib.arrow = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#CC0000").s().p("AjtiiIHbABIjlFEg");
+	this.shape.setTransform(23.8,16.3);
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,47.7,32.6);
+(lib.wheel = function(mode,startPosition,loop) {
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{spin0:0,spin1:72,spin2:144,spin3:216,spin4:288,spin5:360,spin6:432,spin7:504,spin8:576,spin9:648,spin10:720,spin11:792,spin12:864,spin13:936,spin14:1008,spin15:1080,spin16:1152,spin17:1224,spin18:1296,spin19:1368,spin20:1440,spin21:1512,spin22:1584,spin23:1656});
+	// timeline functions:
+	this.frame_0 = function() {
+		this.stop();
+		this.btn_back.addEventListener("click",clickBackFunction);
+		function clickBackFunction(){
+		window.open("/board", "_self");
+		}
+	}
+	this.frame_71 = function() {
+		this.stop();
+	}
+	this.frame_143 = function() {
+		this.stop();
+	}
+	this.frame_215 = function() {
+		this.stop();
+	}
+	this.frame_287 = function() {
+		this.stop();
+	}
+	this.frame_359 = function() {
+		this.stop();
+	}
+	this.frame_431 = function() {
+		this.stop();
+	}
+	this.frame_503 = function() {
+		this.stop();
+	}
+	this.frame_575 = function() {
+		this.stop();
+	}
+	this.frame_647 = function() {
+		this.stop();
+	}
+	this.frame_719 = function() {
+		this.stop();
+	}
+	this.frame_791 = function() {
+		this.stop();
+	}
+	this.frame_863 = function() {
+		this.stop();
+	}
+	this.frame_935 = function() {
+		this.stop();
+	}
+	this.frame_1007 = function() {
+		this.stop();
+	}
+	this.frame_1079 = function() {
+		this.stop();
+	}
+	this.frame_1151 = function() {
+		this.stop();
+	}
+	this.frame_1223 = function() {
+		this.stop();
+	}
+	this.frame_1295 = function() {
+		this.stop();
+	}
+	this.frame_1367 = function() {
+		this.stop();
+	}
+	this.frame_1439 = function() {
+		this.stop();
+	}
+	this.frame_1511 = function() {
+		this.stop();
+	}
+	this.frame_1583 = function() {
+		this.stop();
+	}
+	this.frame_1655 = function() {
+		this.stop();
+	}
+	this.frame_1727 = function() {
+		this.stop();
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(71).call(this.frame_71).wait(72).call(this.frame_143).wait(72).call(this.frame_215).wait(72).call(this.frame_287).wait(72).call(this.frame_359).wait(72).call(this.frame_431).wait(72).call(this.frame_503).wait(72).call(this.frame_575).wait(72).call(this.frame_647).wait(72).call(this.frame_719).wait(72).call(this.frame_791).wait(72).call(this.frame_863).wait(72).call(this.frame_935).wait(72).call(this.frame_1007).wait(72).call(this.frame_1079).wait(72).call(this.frame_1151).wait(72).call(this.frame_1223).wait(72).call(this.frame_1295).wait(72).call(this.frame_1367).wait(72).call(this.frame_1439).wait(72).call(this.frame_1511).wait(72).call(this.frame_1583).wait(72).call(this.frame_1655).wait(72).call(this.frame_1727).wait(1));
+	// Layer_4
+	this.btn_back = new lib.btn_back();
+	this.btn_back.name = "btn_back";
+	this.btn_back.parent = this;
+	this.btn_back.setTransform(6.7,330.6,1,1,0,0,0,65,16.1);
+	this.btn_back._off = true;
+	new cjs.ButtonHelper(this.btn_back, 0, 1, 2);
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FFFFFF").s().p("AgJA4QgFgEABgGQgBgGAFgEQAEgFAFAAQAGAAAFAFQADAEAAAGQAAAGgDAEQgFAEgGAAQgFAAgEgEgAgMAYIAAhTIAZAAIAABTg");
+	this.shape.setTransform(209.2,157.3);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#FFFFFF").s().p("AgdAiIAIgTQAOAHAFAAQACAAACgCQABAAAAAAQABgBAAAAQAAgBAAAAQABgBAAgBQAAAAgBgBQAAAAAAgBQAAAAAAAAQgBgBAAAAIgMgGQgJgEgFgEQgEgGAAgJQAAgLAJgIQAHgHAMAAQAMAAARAJIgJASQgMgGgHAAQgGgBABAGQAAABAAAAQAAABAAAAQAAAAABABQAAAAABABQACACAGACQALAEAGAEQAEAHAAAIQABAMgJAIQgIAIgMAAQgOAAgPgJg");
+	this.shape_1.setTransform(203,159);
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#FFFFFF").s().p("AgMAzIAAg7IgJAAIAAgVIAJAAIAAgVIAZAAIAAAVIAKAAIAAAWIgKAAIAAA6g");
+	this.shape_2.setTransform(197,157.9);
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#FFFFFF").s().p("AAIAqIAAgxQAAgEgDgDQgCgCgCAAQgIAAAAAKIAAAwIgZAAIAAhQIAZAAIAAALIAAAAQAIgOANAAQAJAAAFAGQAFAGAAAJIAAA+g");
+	this.shape_3.setTransform(190.2,158.9);
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.f("#FFFFFF").s().p("AgMA7IAAhQIAZAAIAABQgAgIgjQgEgEAAgGQAAgFADgEQAEgEAFAAQAGAAAEAEQADAEAAAFQAAAGgDAEQgEAEgGAAQgEAAgEgEg");
+	this.shape_4.setTransform(183.6,157.1);
+	this.shape_5 = new cjs.Shape();
+	this.shape_5.graphics.f("#FFFFFF").s().p("AgZAgQgKgMAAgTQABgUAIgMQAKgLAQAAQARAAAJALQAJAMAAAUQAAAUgJALQgJALgRAAQgPAAgKgLgAgGgPQgDAEAAALQAAAUAJAAQAFAAACgEQADgFAAgLQAAgKgDgFQgCgEgFAAQgEAAgCAEg");
+	this.shape_5.setTransform(177.2,159);
+	this.shape_6 = new cjs.Shape();
+	this.shape_6.graphics.f("#FFFFFF").s().p("AgiA6IAAhxIAZAAIAAAKIAAAAQAJgMAKAAQALAAAHALQAHAMAAAUQAAASgHAMQgHAMgLAAQgLAAgIgOIAAAAIAAAsgAgJgPQAAAUAJAAQAKAAAAgUQAAgUgKAAQgJAAAAAUg");
+	this.shape_6.setTransform(169.1,160.6);
+	this.shape_7 = new cjs.Shape();
+	this.shape_7.graphics.f("#FFFFFF").s().p("AgXAqIAAhQIAXAAIAAANIAAAAQAJgPALgBIAEABIAAAZIgJgBQgOAAAAARIAAApg");
+	this.shape_7.setTransform(157.4,158.9);
+	this.shape_8 = new cjs.Shape();
+	this.shape_8.graphics.f("#FFFFFF").s().p("AgYAgQgIgJAAgPIAAgxIAaAAIAAAzQAAAEACADQACADACAAQAHAAAAgLIAAgyIAaAAIAAAuQAAASgIAKQgJAJgPAAQgRAAgIgKg");
+	this.shape_8.setTransform(149.8,159.1);
+	this.shape_9 = new cjs.Shape();
+	this.shape_9.graphics.f("#FFFFFF").s().p("AgZAgQgKgMAAgTQABgUAIgMQAKgLAQAAQARAAAJALQAKAMgBAUQAAAUgJALQgKALgQAAQgPAAgKgLgAgHgPQgCAEAAALQAAAUAJAAQAFAAACgEQADgFAAgLQAAgKgDgFQgCgEgFAAQgEAAgDAEg");
+	this.shape_9.setTransform(141.6,159);
+	this.shape_10 = new cjs.Shape();
+	this.shape_10.graphics.f("#FFFFFF").s().p("AgWA5IALgiIgZhPIAZAAIAGAVIAFAWIAAAAIADgPIAJgcIAZAAIgiBxg");
+	this.shape_10.setTransform(133.6,160.7);
+	this.shape_11 = new cjs.Shape();
+	this.shape_11.graphics.f("#FFFFFF").s().p("AgMAzIAAg7IgJAAIAAgVIAJAAIAAgVIAZAAIAAAVIAKAAIAAAWIgKAAIAAA6g");
+	this.shape_11.setTransform(192.9,136.4);
+	this.shape_12 = new cjs.Shape();
+	this.shape_12.graphics.f("#FFFFFF").s().p("AgdAhIAIgSQAOAHAFAAQACAAACgBQABgBAAAAQABgBAAAAQAAgBAAAAQABgBAAgBQAAAAgBgBQAAAAAAgBQAAAAAAAAQgBgBAAAAIgMgGQgJgEgFgFQgEgFABgJQgBgLAJgIQAHgHAMAAQAMAAARAKIgJASQgMgIgHABQgGgBABAGQAAABAAAAQAAAAAAABQAAAAABABQAAAAABABQACACAGACQALAEAGAEQAEAHAAAIQABAMgJAIQgIAIgMAAQgOAAgPgKg");
+	this.shape_12.setTransform(186.8,137.5);
+	this.shape_13 = new cjs.Shape();
+	this.shape_13.graphics.f("#FFFFFF").s().p("AgZAgQgJgMAAgTQgBgUAKgMQAIgLARAAQARAAAKALQAIAMABAUQAAAUgKALQgKALgQAAQgQAAgJgLgAgGgPQgDAEAAALQAAAUAJAAQAFAAADgEQACgFAAgLQAAgKgCgFQgDgEgFAAQgEAAgCAEg");
+	this.shape_13.setTransform(179.3,137.5);
+	this.shape_14 = new cjs.Shape();
+	this.shape_14.graphics.f("#FFFFFF").s().p("AgMA+IAAh7IAZAAIAAB7g");
+	this.shape_14.setTransform(172.9,135.4);
+	this.shape_15 = new cjs.Shape();
+	this.shape_15.graphics.f("#FFFFFF").s().p("AgYAgQgIgJAAgPIAAgxIAaAAIAAAzQAAAEACADQACADACAAQAHAAAAgLIAAgyIAaAAIAAAuQAAASgIAKQgJAJgPAAQgRAAgIgKg");
+	this.shape_15.setTransform(162,137.6);
+	this.shape_16 = new cjs.Shape();
+	this.shape_16.graphics.f("#FFFFFF").s().p("AgZAgQgJgMAAgTQgBgUAKgMQAJgLAQAAQARAAAKALQAIAMABAUQAAAUgKALQgJALgRAAQgPAAgKgLgAgHgPQgCAEAAALQAAAUAJAAQAFAAADgEQACgFAAgLQAAgKgCgFQgDgEgFAAQgEAAgDAEg");
+	this.shape_16.setTransform(153.8,137.5);
+	this.shape_17 = new cjs.Shape();
+	this.shape_17.graphics.f("#FFFFFF").s().p("AgNA7IAAg1IgfhAIAeAAIAOAnIAAAAIAOgnIAfAAIggBAIAAA1g");
+	this.shape_17.setTransform(146,135.7);
+	this.shape_18 = new cjs.Shape();
+	this.shape_18.graphics.f("#FFFFFF").s().p("AATBIIgnhRIABARIAABAIghAAIAAiPIAhAAIAoBSIgBgOIAAhEIAhAAIAACPg");
+	this.shape_18.setTransform(213.5,182.3);
+	this.shape_19 = new cjs.Shape();
+	this.shape_19.graphics.f("#FFFFFF").s().p("AgPBIIAAiPIAfAAIAACPg");
+	this.shape_19.setTransform(203.4,182.3);
+	this.shape_20 = new cjs.Shape();
+	this.shape_20.graphics.f("#FFFFFF").s().p("AAXBIIgGgYIghAAIgGAYIghAAIAmiPIAjAAIAmCPgAgKAWIAVAAQgHgfgEgdQgDAegHAeg");
+	this.shape_20.setTransform(194.4,182.3);
+	this.shape_21 = new cjs.Shape();
+	this.shape_21.graphics.f("#FFFFFF").s().p("AgmA4QgOgUABgkQgBgkAOgTQAPgUAaABQAfAAAOAgIggANIgGgKQgEgDgFAAQgKAAgEAKQgEAKAAAXQAAAVAFALQAEAKAKAAQAQAAABgYIgQAAIAAgbIAxAAIAAAYQAAAbgNARQgOAPgXAAQgZAAgPgTg");
+	this.shape_21.setTransform(182.4,182.3);
+	this.shape_22 = new cjs.Shape();
+	this.shape_22.graphics.f("#FFFFFF").s().p("AAXBIIgGgYIghAAIgGAYIghAAIAmiPIAjAAIAmCPgAgKAWIAVAAQgHgfgEgdQgDAegHAeg");
+	this.shape_22.setTransform(170.7,182.3);
+	this.shape_23 = new cjs.Shape();
+	this.shape_23.graphics.f("#FFFFFF").s().p("AATBIIgnhRIABARIAABAIghAAIAAiPIAhAAIAoBSIgBgOIAAhEIAhAAIAACPg");
+	this.shape_23.setTransform(152.5,182.3);
+	this.shape_24 = new cjs.Shape();
+	this.shape_24.graphics.f("#FFFFFF").s().p("AgPBIIAAiPIAfAAIAACPg");
+	this.shape_24.setTransform(142.4,182.3);
+	this.shape_25 = new cjs.Shape();
+	this.shape_25.graphics.f("#FFFFFF").s().p("AgqBIIAAiPIAnAAQAVAAANAMQANANAAATQAAAVgOALQgMAMgXAAIgFAAIAAA3gAgKgJQAKgBAFgEQAFgDABgJQgBgJgFgEQgFgEgKAAg");
+	this.shape_25.setTransform(133.9,182.3);
+	this.shape_26 = new cjs.Shape();
+	this.shape_26.graphics.f("#FFFFFF").s().p("AghBFIAAghQAQAJAKAAQAGAAADgEQADgDAAgGQAAgEgCgEIgJgJQgRgNgIgKQgHgLAAgOQAAgSALgMQAMgMASAAQANAAAOAGIAAAgQgPgIgJAAQgGAAgCADQgEADAAAGQAAAJAQALQAJAGAKAMQAKAMAAAQQAAASgNAMQgNANgTAAQgNAAgOgHg");
+	this.shape_26.setTransform(123.2,182.3);
+	this.shape_27 = new cjs.Shape();
+	this.shape_27.graphics.f("#FFFFFF").s().p("AgJA4QgEgEAAgGQAAgGAEgEQAEgFAFAAQAGAAAFAFQADAEAAAGQAAAGgDAEQgFAEgGAAQgFAAgEgEgAgMAYIAAhTIAZAAIAABTg");
+	this.shape_27.setTransform(205.2,163.3);
+	this.shape_28 = new cjs.Shape();
+	this.shape_28.graphics.f("#FFFFFF").s().p("AAIAqIAAgxQAAgEgDgDQgCgCgCAAQgIAAAAAKIAAAwIgZAAIAAhQIAZAAIAAALIABAAQAIgOAMAAQAJAAAFAGQAFAGAAAJIAAA+g");
+	this.shape_28.setTransform(198.3,164.9);
+	this.shape_29 = new cjs.Shape();
+	this.shape_29.graphics.f("#FFFFFF").s().p("AgXApIAAhQIAXAAIAAAOIABAAQAJgQAKAAIAEABIAAAZIgIgBQgPAAAAASIAAAng");
+	this.shape_29.setTransform(191.2,164.9);
+	this.shape_30 = new cjs.Shape();
+	this.shape_30.graphics.f("#FFFFFF").s().p("AgMAzIAAg7IgKAAIAAgVIAKAAIAAgVIAZAAIAAAVIAJAAIAAAWIgJAAIAAA6g");
+	this.shape_30.setTransform(176.9,163.9);
+	this.shape_31 = new cjs.Shape();
+	this.shape_31.graphics.f("#FFFFFF").s().p("AgbAfQgHgMAAgTQAAgTAHgMQAHgLALAAQAGAAADADQAFADAEAGIABAAIAAgKIAZAAIAABQIgZAAIAAgKIgBAAQgEAHgFADQgDADgGAAQgLAAgHgMgAgJAAQAAAUAJAAQAKAAAAgUQAAgUgKABQgJgBAAAUg");
+	this.shape_31.setTransform(165.4,165);
+	this.shape_32 = new cjs.Shape();
+	this.shape_32.graphics.f("#FFFFFF").s().p("AgXApIAAhQIAXAAIAAAOIAAAAQAKgQAKAAIAEABIAAAZIgIgBQgPAAAAASIAAAng");
+	this.shape_32.setTransform(158.6,164.9);
+	this.shape_33 = new cjs.Shape();
+	this.shape_33.graphics.f("#FFFFFF").s().p("AgMAzIAAg7IgJAAIAAgVIAJAAIAAgVIAYAAIAAAVIALAAIAAAWIgLAAIAAA6g");
+	this.shape_33.setTransform(152.6,163.9);
+	this.shape_34 = new cjs.Shape();
+	this.shape_34.graphics.f("#FFFFFF").s().p("AAMAoIgMgbIAAAAQAAAEgFAKIgGANIgcAAIAZgnIgZgpIAdAAQAKAWAAAEIAAAAQABgGAKgUIAdAAIgaApIAaAng");
+	this.shape_34.setTransform(145.8,165);
+	this.shape_35 = new cjs.Shape();
+	this.shape_35.graphics.f("#FFFFFF").s().p("AgXAfQgJgMAAgTQAAgTAJgMQAJgLAOAAQAJAAAIAGQAIAFAEAJQAEAJAAAUIgpAAQAAASAJAAQADAAACgDQADgDAAgDIAWAAQgGAbgZAAQgOAAgJgMgAgGgTQgCADAAAJIARAAQAAgIgCgEQgCgEgFgBQgEAAgCAFg");
+	this.shape_35.setTransform(137.7,165);
+	this.shape_36 = new cjs.Shape();
+	this.shape_36.graphics.f("#FFFFFF").s().p("AgXAgQgJgNAAgTQAAgTAJgLQAJgMAOAAQAJAAAIAFQAIAGAEAJQAEAKAAASIgpAAQAAASAJAAQADABACgDQADgDAAgDIAWAAQgGAbgZAAQgOAAgJgLgAgGgUQgCAEAAAKIARAAQAAgJgCgEQgCgFgFABQgEAAgCADg");
+	this.shape_36.setTransform(211.4,145.7);
+	this.shape_37 = new cjs.Shape();
+	this.shape_37.graphics.f("#FFFFFF").s().p("AAIAqIAAgxQAAgEgCgDQgDgCgDAAQgHAAAAAKIAAAwIgZAAIAAhQIAZAAIAAALIAAAAQAJgOANAAQAIAAAFAGQAFAGAAAJIAAA+g");
+	this.shape_37.setTransform(203.4,145.6);
+	this.shape_38 = new cjs.Shape();
+	this.shape_38.graphics.f("#FFFFFF").s().p("AgZAgQgKgMAAgTQABgUAIgMQAKgLAQAAQARAAAJALQAKAMgBAUQAAAUgJALQgKALgQAAQgQAAgJgLgAgHgPQgCAEAAALQAAAUAJAAQAFAAADgEQACgFAAgLQAAgKgCgFQgDgEgFAAQgEAAgDAEg");
+	this.shape_38.setTransform(195,145.7);
+	this.shape_39 = new cjs.Shape();
+	this.shape_39.graphics.f("#FFFFFF").s().p("AgXAgQgJgNAAgTQAAgTAJgLQAJgMAOAAQAJAAAIAFQAIAGAEAJQAEAKAAASIgpAAQAAASAJAAQADABACgDQADgDAAgDIAWAAQgGAbgZAAQgOAAgJgLgAgGgUQgCAEAAAKIARAAQAAgJgCgEQgCgFgFABQgEAAgCADg");
+	this.shape_39.setTransform(182.7,145.7);
+	this.shape_40 = new cjs.Shape();
+	this.shape_40.graphics.f("#FFFFFF").s().p("AgJApIgahQIAaAAIAJArIAAAAIAKgrIAZAAIgZBQg");
+	this.shape_40.setTransform(175.6,145.7);
+	this.shape_41 = new cjs.Shape();
+	this.shape_41.graphics.f("#FFFFFF").s().p("AgbAgQgHgMAAgUQAAgTAHgLQAHgMALAAQAGAAADADQAFADAEAGIABAAIAAgJIAZAAIAABQIgZAAIAAgLIgBAAQgEAHgFADQgDADgGAAQgLAAgHgLgAgJAAQAAAVAJAAQAKAAAAgVQAAgTgKgBQgJABAAATg");
+	this.shape_41.setTransform(167.3,145.7);
+	this.shape_42 = new cjs.Shape();
+	this.shape_42.graphics.f("#FFFFFF").s().p("AAHA+IAAgxQAAgFgBgDQgCgCgEAAQgHgBAAALIAAAxIgZAAIAAh7IAZAAIAAA2IAAAAQAJgNANgBQAIAAAFAHQAFAFAAAKIAAA9g");
+	this.shape_42.setTransform(159.1,143.6);
+	this.shape_43 = new cjs.Shape();
+	this.shape_43.graphics.f("#FFFFFF").s().p("AgmA4QgNgUAAgkQAAgkANgUQAPgSAagBQAfAAAOAiIggAMIgHgKQgDgDgGAAQgIAAgEALQgFAKAAAWQAAAWAFAJQAFALAJAAQAQAAAAgXIgOAAIAAgcIAwAAIAAAXQAAAdgNAPQgNAQgYABQgZAAgPgUg");
+	this.shape_43.setTransform(183.1,186.7);
+	this.shape_44 = new cjs.Shape();
+	this.shape_44.graphics.f("#FFFFFF").s().p("AgqBIIAAiPIAnAAQAVAAANAMQAMANAAATQAAAVgMALQgNAMgWAAIgGAAIAAA3gAgKgJQAKgBAFgEQAGgDAAgJQAAgJgGgEQgFgEgKAAg");
+	this.shape_44.setTransform(134.6,186.7);
+	this.shape_45 = new cjs.Shape();
+	this.shape_45.graphics.f("#FFFFFF").s().p("AgJA4QgEgEgBgGQABgGAEgEQAEgFAFAAQAGAAAFAFQADAEAAAGQAAAGgDAEQgFAEgGAAQgFAAgEgEgAgMAYIAAhTIAZAAIAABTg");
+	this.shape_45.setTransform(197.7,160.3);
+	this.shape_46 = new cjs.Shape();
+	this.shape_46.graphics.f("#FFFFFF").s().p("AAIAqIAAgxQAAgEgCgDQgDgCgCAAQgIAAAAAKIAAAwIgZAAIAAhQIAZAAIAAALIAAAAQAJgOANAAQAIAAAFAGQAFAGAAAJIAAA+g");
+	this.shape_46.setTransform(190.8,161.8);
+	this.shape_47 = new cjs.Shape();
+	this.shape_47.graphics.f("#FFFFFF").s().p("AgXAfQgJgLAAgUQAAgTAJgMQAJgLAOAAQAJAAAIAGQAIAFAEAJQAEAKAAATIgpAAQAAASAJAAQADAAACgDQADgDAAgDIAWAAQgGAbgZAAQgOAAgJgMgAgGgTQgCADAAAJIARAAQAAgIgCgEQgCgEgFgBQgEAAgCAFg");
+	this.shape_47.setTransform(158.5,162);
+	this.shape_48 = new cjs.Shape();
+	this.shape_48.graphics.f("#FFFFFF").s().p("AAHAqIAAgxQAAgEgBgDQgDgCgDAAQgHAAAAAKIAAAwIgZAAIAAhQIAZAAIAAALIAAAAQAJgOANAAQAIAAAFAGQAFAGAAAJIAAA+g");
+	this.shape_48.setTransform(150.5,161.8);
+	this.shape_49 = new cjs.Shape();
+	this.shape_49.graphics.f("#FFFFFF").s().p("AgMAzIAAg7IgKAAIAAgVIAKAAIAAgVIAYAAIAAAVIAKAAIAAAWIgKAAIAAA6g");
+	this.shape_49.setTransform(193.5,139.4);
+	this.shape_50 = new cjs.Shape();
+	this.shape_50.graphics.f("#FFFFFF").s().p("AgeAiIAJgTQANAHAGAAQACAAACgCQABAAAAAAQABgBAAAAQAAgBAAAAQAAgBAAAAQAAgBAAgBQAAAAAAgBQAAAAAAAAQgBgBAAAAIgMgGQgKgEgEgEQgDgGAAgJQAAgLAIgIQAHgHAMAAQAMAAARAJIgJASQgLgGgIAAQgFgBgBAGQAAABABAAQAAABAAAAQAAABABAAQAAAAABABIAHAEQAMAEAFAEQAGAHAAAIQAAAMgJAIQgIAIgMAAQgNAAgRgJg");
+	this.shape_50.setTransform(187.4,140.5);
+	this.shape_51 = new cjs.Shape();
+	this.shape_51.graphics.f("#FFFFFF").s().p("AgZAgQgKgMAAgTQABgUAIgMQAKgLAQAAQARAAAJALQAJAMAAAUQAAAUgJALQgJALgRAAQgPAAgKgLgAgGgPQgDAEAAALQAAAUAJAAQAFAAACgEQADgFAAgLQAAgKgDgFQgCgEgFAAQgEAAgCAEg");
+	this.shape_51.setTransform(179.9,140.5);
+	this.shape_52 = new cjs.Shape();
+	this.shape_52.graphics.f("#FFFFFF").s().p("AgZAgQgKgMABgTQAAgUAJgMQAIgLARAAQARAAAJALQAJAMAAAUQABAUgKALQgJALgRAAQgPAAgKgLgAgGgPQgDAEAAALQAAAUAJAAQAFAAACgEQADgFAAgLQAAgKgDgFQgCgEgFAAQgEAAgCAEg");
+	this.shape_52.setTransform(154.4,140.5);
+	this.shape_53 = new cjs.Shape();
+	this.shape_53.graphics.f("#FFFFFF").s().p("AglA4QgPgUAAgkQAAgkAPgUQAOgSAaAAQAfgBANAiIgfAMIgHgKQgDgDgGAAQgJAAgDALQgFAJAAAXQAAAVAFALQAFAKAIAAQARAAAAgYIgOAAIAAgbIAxAAIAAAXQAAAdgOAQQgNAQgYAAQgZgBgOgTg");
+	this.shape_53.setTransform(183.8,183.9);
+	this.shape_54 = new cjs.Shape();
+	this.shape_54.graphics.f("#FFFFFF").s().p("AgrBIIAAiPIApAAQAUAAANAMQAMANAAATQABAVgNALQgOAMgVAAIgGAAIAAA3gAgKgJQAKgBAFgEQAGgDgBgJQABgJgGgEQgFgEgKAAg");
+	this.shape_54.setTransform(135.3,183.9);
+	this.shape_55 = new cjs.Shape();
+	this.shape_55.graphics.f("#FFFFFF").s().p("AgJA4QgFgEAAgGQAAgGAFgEQAEgFAFAAQAGAAAEAFQAFAEAAAGQAAAGgFAEQgEAEgGAAQgFAAgEgEgAgMAYIAAhTIAZAAIAABTg");
+	this.shape_55.setTransform(210.7,159.9);
+	this.shape_56 = new cjs.Shape();
+	this.shape_56.graphics.f("#FFFFFF").s().p("AgeAhIAJgTQANAIAGAAQACAAADgBQAAgBAAAAQABgBAAAAQAAgBAAAAQAAgBAAgBQAAAAAAgBQAAAAAAgBQAAAAAAAAQgBgBAAAAIgMgGQgKgEgEgFQgDgFAAgIQAAgMAIgHQAHgIAMAAQAMAAARAKIgJASQgLgIgIABQgFAAgBAFQAAAAABABQAAAAAAABQAAAAABABQAAABABAAIAHAEQAMAEAFAFQAGAFAAAJQAAAMgIAIQgJAIgMAAQgNAAgRgKg");
+	this.shape_56.setTransform(204.5,161.6);
+	this.shape_57 = new cjs.Shape();
+	this.shape_57.graphics.f("#FFFFFF").s().p("AAHAqIAAgxQAAgEgCgDQgBgCgDAAQgIAAAAAKIAAAwIgZAAIAAhQIAZAAIAAALIABAAQAHgOANAAQAJAAAFAGQAFAGAAAJIAAA+g");
+	this.shape_57.setTransform(191.7,161.4);
+	this.shape_58 = new cjs.Shape();
+	this.shape_58.graphics.f("#FFFFFF").s().p("AgZAgQgKgMAAgTQAAgUAJgMQAKgLAQAAQARAAAJALQAKAMAAAUQAAAUgKALQgJALgRAAQgQAAgJgLgAgHgPQgCAEAAALQAAAUAJAAQAFAAADgEQACgFAAgLQAAgKgCgFQgDgEgFAAQgEAAgDAEg");
+	this.shape_58.setTransform(178.7,161.6);
+	this.shape_59 = new cjs.Shape();
+	this.shape_59.graphics.f("#FFFFFF").s().p("AgXApIAAhPIAXAAIAAANIAAAAQAKgPAKAAIAEAAIAAAZIgIgBQgPAAAAASIAAAng");
+	this.shape_59.setTransform(158.9,161.5);
+	this.shape_60 = new cjs.Shape();
+	this.shape_60.graphics.f("#FFFFFF").s().p("AgZAgQgJgMgBgTQAAgUAJgMQAKgLAQAAQARAAAKALQAJAMAAAUQAAAUgKALQgJALgRAAQgQAAgJgLgAgHgPQgCAEAAALQAAAUAJAAQAFAAADgEQACgFAAgLQAAgKgCgFQgDgEgFAAQgEAAgDAEg");
+	this.shape_60.setTransform(143.1,161.6);
+	this.shape_61 = new cjs.Shape();
+	this.shape_61.graphics.f("#FFFFFF").s().p("AgWA5IALgiIgahPIAZAAIAHAVIAFAWIAAAAIADgPIAJgcIAaAAIgjBxg");
+	this.shape_61.setTransform(135.1,163.2);
+	this.shape_62 = new cjs.Shape();
+	this.shape_62.graphics.f("#FFFFFF").s().p("AgeAhIAJgTQANAIAGAAQACAAADgBQAAgBAAAAQABgBAAAAQAAgBAAAAQAAgBAAgBQAAAAAAgBQAAAAAAgBQAAAAAAAAQgBgBAAAAIgMgGQgKgEgEgFQgDgFAAgIQAAgMAIgHQAHgIAMAAQAMAAARAKIgJASQgLgIgIAAQgFABgBAFQAAAAABABQAAAAAAABQAAABABAAQAAABABAAIAHAEQAMAEAFAFQAGAFAAAJQAAAMgJAIQgIAIgMAAQgNAAgRgKg");
+	this.shape_62.setTransform(188.3,140.1);
+	this.shape_63 = new cjs.Shape();
+	this.shape_63.graphics.f("#FFFFFF").s().p("AglA4QgPgUAAgkQAAgkAPgUQAOgSAaAAQAfgBAOAiIggAMIgHgKQgDgDgGAAQgIAAgEALQgFAKAAAWQAAAWAFAJQAFALAIAAQARAAAAgXIgOAAIAAgcIAwAAIAAAXQAAAdgNAQQgNAPgYABQgZAAgOgUg");
+	this.shape_63.setTransform(183.9,184.9);
+	this.shape_64 = new cjs.Shape();
+	this.shape_64.graphics.f("#FFFFFF").s().p("AgqBIIAAiPIAoAAQAUAAANAMQAMANAAATQABAVgNALQgOAMgVAAIgGAAIAAA3gAgKgJQAKgBAFgEQAGgDAAgJQAAgJgGgEQgFgEgKAAg");
+	this.shape_64.setTransform(135.4,184.9);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.shape_26,p:{x:123.2,y:182.3}},{t:this.shape_25},{t:this.shape_24,p:{x:142.4,y:182.3}},{t:this.shape_23,p:{x:152.5,y:182.3}},{t:this.shape_22,p:{x:170.7,y:182.3}},{t:this.shape_21},{t:this.shape_20,p:{x:194.4,y:182.3}},{t:this.shape_19,p:{x:203.4,y:182.3}},{t:this.shape_18,p:{x:213.5,y:182.3}},{t:this.shape_17,p:{x:146,y:135.7}},{t:this.shape_16},{t:this.shape_15,p:{x:162,y:137.6}},{t:this.shape_14,p:{x:172.9,y:135.4}},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9,p:{x:141.6,y:159}},{t:this.shape_8,p:{x:149.8,y:159.1}},{t:this.shape_7},{t:this.shape_6,p:{x:169.1,y:160.6}},{t:this.shape_5,p:{x:177.2,y:159}},{t:this.shape_4,p:{x:183.6,y:157.1}},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.shape_26,p:{x:123.9,y:186.7}},{t:this.shape_44},{t:this.shape_24,p:{x:143.1,y:186.7}},{t:this.shape_23,p:{x:153.2,y:186.7}},{t:this.shape_22,p:{x:171.4,y:186.7}},{t:this.shape_43},{t:this.shape_20,p:{x:195.1,y:186.7}},{t:this.shape_19,p:{x:204.1,y:186.7}},{t:this.shape_18,p:{x:214.2,y:186.7}},{t:this.shape_17,p:{x:130.2,y:143.9}},{t:this.shape_9,p:{x:138,y:145.7}},{t:this.shape_15,p:{x:146.2,y:145.8}},{t:this.shape_42},{t:this.shape_41},{t:this.shape_40},{t:this.shape_39},{t:this.shape_38},{t:this.shape_37},{t:this.shape_36},{t:this.shape_35},{t:this.shape_34},{t:this.shape_33,p:{x:152.6,y:163.9}},{t:this.shape_32,p:{x:158.6,y:164.9}},{t:this.shape_31},{t:this.shape_30,p:{x:176.9,y:163.9}},{t:this.shape_8,p:{x:183.6,y:165.1}},{t:this.shape_29},{t:this.shape_28},{t:this.shape_27}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.shape_26,p:{x:124.6,y:183.9}},{t:this.shape_54},{t:this.shape_24,p:{x:143.8,y:183.9}},{t:this.shape_23,p:{x:153.9,y:183.9}},{t:this.shape_22,p:{x:172.1,y:183.9}},{t:this.shape_53},{t:this.shape_20,p:{x:195.8,y:183.9}},{t:this.shape_19,p:{x:204.8,y:183.9}},{t:this.shape_18,p:{x:214.9,y:183.9}},{t:this.shape_17,p:{x:146.6,y:138.6}},{t:this.shape_52,p:{x:154.4,y:140.5}},{t:this.shape_15,p:{x:162.6,y:140.6}},{t:this.shape_14,p:{x:173.5,y:138.3}},{t:this.shape_51},{t:this.shape_50},{t:this.shape_49,p:{x:193.5,y:139.4}},{t:this.shape_5,p:{x:142.1,y:162}},{t:this.shape_48},{t:this.shape_47},{t:this.shape_30,p:{x:169.3,y:160.9}},{t:this.shape_8,p:{x:176,y:162.1}},{t:this.shape_32,p:{x:183.7,y:161.9}},{t:this.shape_46},{t:this.shape_45}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).to({state:[]},1).to({state:[{t:this.shape_26,p:{x:124.7,y:184.9}},{t:this.shape_64},{t:this.shape_24,p:{x:143.9,y:184.9}},{t:this.shape_23,p:{x:154,y:184.9}},{t:this.shape_22,p:{x:172.2,y:184.9}},{t:this.shape_63},{t:this.shape_20,p:{x:195.9,y:184.9}},{t:this.shape_19,p:{x:204.9,y:184.9}},{t:this.shape_18,p:{x:215,y:184.9}},{t:this.shape_17,p:{x:147.5,y:138.2}},{t:this.shape_52,p:{x:155.3,y:140.1}},{t:this.shape_15,p:{x:163.5,y:140.2}},{t:this.shape_14,p:{x:174.4,y:137.9}},{t:this.shape_5,p:{x:180.8,y:140.1}},{t:this.shape_62},{t:this.shape_49,p:{x:194.4,y:139}},{t:this.shape_61},{t:this.shape_60},{t:this.shape_8,p:{x:151.3,y:161.7}},{t:this.shape_59},{t:this.shape_6,p:{x:170.6,y:163.1}},{t:this.shape_58},{t:this.shape_4,p:{x:185.1,y:159.7}},{t:this.shape_57},{t:this.shape_33,p:{x:198.5,y:160.5}},{t:this.shape_56},{t:this.shape_55}]},71).to({state:[]},1).to({state:[{t:this.btn_back}]},71).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.btn_back).wait(71).to({_off:false},0).to({_off:true},1).wait(71).to({_off:false},0).to({_off:true},1).wait(71).to({_off:false},0).to({_off:true},1).wait(71).to({_off:false},0).to({_off:true},1).wait(71).to({_off:false},0).to({_off:true},1).wait(71).to({_off:false},0).to({_off:true},1).wait(71).to({_off:false},0).to({_off:true},1).wait(71).to({_off:false},0).to({_off:true},1).wait(71).to({_off:false},0).to({_off:true},1).wait(71).to({_off:false},0).to({_off:true},1).wait(71).to({_off:false},0).to({_off:true},1).wait(71).to({_off:false},0).to({_off:true},1).wait(143).to({_off:false},0).to({_off:true},1).wait(143).to({_off:false},0).to({_off:true},1).wait(143).to({_off:false},0).to({_off:true},1).wait(71).to({_off:false},0).to({_off:true},1).wait(71).to({_off:false},0).to({_off:true},1).wait(71).to({_off:false},0).to({_off:true},1).wait(71).to({_off:false},0).to({_off:true},1).wait(143).to({_off:false},0).wait(1));
+	// Layer_1
+	this.wheel1 = new lib.Symbol2();
+	this.wheel1.name = "wheel1";
+	this.wheel1.parent = this;
+	this.wheel1.setTransform(170.4,169.2,1,1,-4,0,0,168.3,169);
+	this.wheel2 = new lib.Symbol2();
+	this.wheel2.name = "wheel2";
+	this.wheel2.parent = this;
+	this.wheel2.setTransform(170.5,168.9,1,1,-4,0,0,168.3,168.8);
+	this.wheel2._off = true;
+	this.wheel3 = new lib.Symbol2();
+	this.wheel3.name = "wheel3";
+	this.wheel3.parent = this;
+	this.wheel3.setTransform(171,169,1,1,-4,0,0,168.6,169.1);
+	this.wheel3._off = true;
+	this.wheel4 = new lib.Symbol2();
+	this.wheel4.name = "wheel4";
+	this.wheel4.parent = this;
+	this.wheel4.setTransform(170.5,169,1,1,-4,0,0,168.3,168.8);
+	this.wheel4._off = true;
+	this.wheel5 = new lib.Symbol2();
+	this.wheel5.name = "wheel5";
+	this.wheel5.parent = this;
+	this.wheel5.setTransform(170.2,169.3,1,1,-4,0,0,168.1,169.2);
+	this.wheel5._off = true;
+	this.wheel6 = new lib.Symbol2();
+	this.wheel6.name = "wheel6";
+	this.wheel6.parent = this;
+	this.wheel6.setTransform(170.2,169.2,1,1,-4,0,0,168.2,169.1);
+	this.wheel6._off = true;
+	this.wheel7 = new lib.Symbol2();
+	this.wheel7.name = "wheel7";
+	this.wheel7.parent = this;
+	this.wheel7.setTransform(170.5,169.1,1,1,-4,0,0,168.6,169);
+	this.wheel7._off = true;
+	this.wheel8 = new lib.Symbol2();
+	this.wheel8.name = "wheel8";
+	this.wheel8.parent = this;
+	this.wheel8.setTransform(170.6,169.1,1,1,-4,0,0,168.5,169.2);
+	this.wheel8._off = true;
+	this.wheel9 = new lib.Symbol2();
+	this.wheel9.name = "wheel9";
+	this.wheel9.parent = this;
+	this.wheel9.setTransform(170.3,169.1,1,1,-4,0,0,168.6,169.1);
+	this.wheel9._off = true;
+	this.wheel10 = new lib.Symbol2();
+	this.wheel10.name = "wheel10";
+	this.wheel10.parent = this;
+	this.wheel10.setTransform(170.4,169.1,1,1,-4,0,0,168.6,169.1);
+	this.wheel10._off = true;
+	this.wheel11 = new lib.Symbol2();
+	this.wheel11.name = "wheel11";
+	this.wheel11.parent = this;
+	this.wheel11.setTransform(170.3,169.1,1,1,-4,0,0,168.6,169.1);
+	this.wheel11._off = true;
+	this.wheel12 = new lib.Symbol2();
+	this.wheel12.name = "wheel12";
+	this.wheel12.parent = this;
+	this.wheel12.setTransform(170.4,169.1,1,1,-4,0,0,168.6,169.1);
+	this.wheel12._off = true;
+	this.wheel13 = new lib.Symbol2();
+	this.wheel13.name = "wheel13";
+	this.wheel13.parent = this;
+	this.wheel13.setTransform(170.4,169.1,1,1,-4,0,0,168.6,169.1);
+	this.wheel13._off = true;
+	this.wheel14 = new lib.Symbol2();
+	this.wheel14.name = "wheel14";
+	this.wheel14.parent = this;
+	this.wheel14.setTransform(170.7,169,1,1,-4,0,0,168.6,169.1);
+	this.wheel14._off = true;
+	this.wheel15 = new lib.Symbol2();
+	this.wheel15.name = "wheel15";
+	this.wheel15.parent = this;
+	this.wheel15.setTransform(170.5,169,1,1,-4,0,0,168.3,168.8);
+	this.wheel15._off = true;
+	this.wheel16 = new lib.Symbol2();
+	this.wheel16.name = "wheel16";
+	this.wheel16.parent = this;
+	this.wheel16.setTransform(170.4,169.1,1,1,-4,0,0,168.6,169.1);
+	this.wheel16._off = true;
+	this.wheel17 = new lib.Symbol2();
+	this.wheel17.name = "wheel17";
+	this.wheel17.parent = this;
+	this.wheel17.setTransform(170.4,169.1,1,1,-4,0,0,168.6,169.1);
+	this.wheel17._off = true;
+	this.wheel18 = new lib.Symbol2();
+	this.wheel18.name = "wheel18";
+	this.wheel18.parent = this;
+	this.wheel18.setTransform(170.4,169.1,1,1,-4,0,0,168.6,169.1);
+	this.wheel18._off = true;
+	this.wheel19 = new lib.Symbol2();
+	this.wheel19.name = "wheel19";
+	this.wheel19.parent = this;
+	this.wheel19.setTransform(170.4,169.1,1,1,-4,0,0,168.6,169.1);
+	this.wheel19._off = true;
+	this.wheel20 = new lib.Symbol2();
+	this.wheel20.name = "wheel20";
+	this.wheel20.parent = this;
+	this.wheel20.setTransform(170.4,169.1,1,1,-4,0,0,168.6,169.1);
+	this.wheel20._off = true;
+	this.wheel21 = new lib.Symbol2();
+	this.wheel21.name = "wheel21";
+	this.wheel21.parent = this;
+	this.wheel21.setTransform(170.3,169.1,1,1,-4,0,0,168.6,169.1);
+	this.wheel21._off = true;
+	this.wheel22 = new lib.Symbol2();
+	this.wheel22.name = "wheel22";
+	this.wheel22.parent = this;
+	this.wheel22.setTransform(170.4,169.1,1,1,-4,0,0,168.6,169.1);
+	this.wheel22._off = true;
+	this.wheel23 = new lib.Symbol2();
+	this.wheel23.name = "wheel23";
+	this.wheel23.parent = this;
+	this.wheel23.setTransform(170.4,169.1,1,1,-4,0,0,168.6,169.1);
+	this.wheel23._off = true;
+	this.wheel24 = new lib.Symbol2();
+	this.wheel24.name = "wheel24";
+	this.wheel24.parent = this;
+	this.wheel24.setTransform(170.6,169,1,1,-4,0,0,168.6,168.9);
+	this.wheel24._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.wheel1).wait(1).to({regX:168.8,regY:168.9,rotation:26.2,x:170.9,y:169.3},0).wait(1).to({rotation:55.9,x:170.8,y:169.5},0).wait(1).to({rotation:85.3,x:170.6,y:169.6},0).wait(1).to({rotation:114.2,x:170.3},0).wait(1).to({rotation:142.7,x:170.1,y:169.5},0).wait(1).to({rotation:170.8,x:170,y:169.3},0).wait(1).to({rotation:198.4,y:169.1},0).wait(1).to({rotation:225.6,x:170.1,y:168.9},0).wait(1).to({rotation:252.4,x:170.2,y:168.7},0).wait(1).to({rotation:278.8,x:170.5,y:168.6},0).wait(1).to({rotation:304.7,x:170.7,y:168.7},0).wait(1).to({rotation:330.2,x:170.8,y:168.8},0).wait(1).to({rotation:355.2,x:170.9,y:169},0).wait(1).to({rotation:379.9,y:169.3},0).wait(1).to({rotation:404.1,x:170.8,y:169.5},0).wait(1).to({rotation:427.9,x:170.7},0).wait(1).to({rotation:451.2,x:170.6,y:169.6},0).wait(1).to({rotation:474.1,x:170.4},0).wait(1).to({rotation:496.6,x:170.2,y:169.5},0).wait(1).to({rotation:518.7,x:170.1,y:169.4},0).wait(1).to({rotation:540.3,x:170,y:169.2},0).wait(1).to({rotation:561.6,y:169},0).wait(1).to({rotation:582.3,x:170.1,y:168.9},0).wait(1).to({rotation:602.7,x:170.2,y:168.7},0).wait(1).to({rotation:622.6,x:170.3},0).wait(1).to({rotation:642.1,x:170.5,y:168.6},0).wait(1).to({rotation:661.2,x:170.7,y:168.7},0).wait(1).to({rotation:679.8,x:170.8,y:168.8},0).wait(1).to({rotation:698,x:170.9,y:168.9},0).wait(1).to({rotation:715.8,y:169},0).wait(1).to({rotation:733.2,y:169.2},0).wait(1).to({rotation:750.1,y:169.4},0).wait(1).to({rotation:766.6,x:170.8},0).wait(1).to({rotation:782.7,y:169.6},0).wait(1).to({rotation:798.3,x:170.6},0).wait(1).to({rotation:813.5,x:170.5},0).wait(1).to({rotation:828.3,x:170.4},0).wait(1).to({rotation:842.6,x:170.3,y:169.5},0).wait(1).to({rotation:856.6,x:170.2},0).wait(1).to({rotation:870.1,x:170.1},0).wait(1).to({rotation:883.1,y:169.3},0).wait(1).to({rotation:895.8,x:170,y:169.2},0).wait(1).to({rotation:908},0).wait(1).to({rotation:919.8,y:169.1},0).wait(1).to({rotation:931.1,y:169},0).wait(1).to({rotation:942.1,x:170.1,y:168.9},0).wait(1).to({rotation:952.6,y:168.8},0).wait(1).to({rotation:962.6,x:170.2},0).wait(1).to({rotation:972.3,y:168.7},0).wait(1).to({rotation:981.5,x:170.3},0).wait(1).to({rotation:990.3},0).wait(1).to({rotation:998.6,x:170.5},0).wait(1).to({rotation:1006.5},0).wait(1).to({rotation:1014,x:170.6},0).wait(1).to({rotation:1021.1},0).wait(1).to({rotation:1027.7,x:170.7},0).wait(1).to({rotation:1034},0).wait(1).to({rotation:1039.7,x:170.8,y:168.8},0).wait(1).to({rotation:1045.1},0).wait(1).to({rotation:1050},0).wait(1).to({rotation:1054.5,x:170.9,y:168.9},0).wait(1).to({rotation:1058.6,y:168.8},0).wait(1).to({rotation:1062.2,y:168.9},0).wait(1).to({rotation:1065.4},0).wait(1).to({rotation:1068.2,y:169},0).wait(1).to({rotation:1070.6},0).wait(1).to({rotation:1072.5},0).wait(1).to({rotation:1074},0).wait(1).to({rotation:1075.1,x:171},0).wait(1).to({rotation:1075.7,x:170.9},0).wait(1).to({rotation:1076,x:171},0).to({_off:true},1).wait(1656));
+	this.timeline.addTween(cjs.Tween.get(this.wheel2).wait(72).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:25.8,x:170.9,y:169.3},0).wait(1).to({rotation:55.3,x:170.7,y:169.4},0).wait(1).to({rotation:84.3,x:170.5},0).wait(1).to({rotation:112.9,x:170.2,y:169.2},0).wait(1).to({rotation:141.1,x:170.1,y:169.1},0).wait(1).to({rotation:168.8,y:168.9},0).wait(1).to({rotation:196.2,y:168.6},0).wait(1).to({rotation:223.1,x:170.3,y:168.5},0).wait(1).to({rotation:249.6,x:170.4,y:168.4},0).wait(1).to({rotation:275.6,x:170.7},0).wait(1).to({rotation:301.2,x:170.9,y:168.6},0).wait(1).to({rotation:326.5,x:171,y:168.7},0).wait(1).to({rotation:351.2,y:168.9},0).wait(1).to({rotation:375.6,x:170.9,y:169.1},0).wait(1).to({rotation:399.5,x:170.8,y:169.3},0).wait(1).to({rotation:423.1,x:170.6,y:169.4},0).wait(1).to({rotation:446.2,x:170.4},0).wait(1).to({rotation:468.8,x:170.2,y:169.3},0).wait(1).to({rotation:491.1,y:169.1},0).wait(1).to({rotation:512.9,x:170.1,y:169},0).wait(1).to({rotation:534.3,x:170,y:168.9},0).wait(1).to({rotation:555.3,x:170.1,y:168.6},0).wait(1).to({rotation:575.8,x:170.2,y:168.5},0).wait(1).to({rotation:596,x:170.3},0).wait(1).to({rotation:615.7,x:170.5,y:168.4},0).wait(1).to({rotation:634.9,x:170.7,y:168.5},0).wait(1).to({rotation:653.8,x:170.8},0).wait(1).to({rotation:672.2,x:170.9,y:168.6},0).wait(1).to({rotation:690.2,x:171,y:168.7},0).wait(1).to({rotation:707.8,y:168.9},0).wait(1).to({rotation:725,x:170.9,y:169},0).wait(1).to({rotation:741.7,x:170.8,y:169.2},0).wait(1).to({rotation:758,y:169.3},0).wait(1).to({rotation:773.9,x:170.7,y:169.4},0).wait(1).to({rotation:789.4,x:170.5},0).wait(1).to({rotation:804.4,x:170.4},0).wait(1).to({rotation:819,x:170.3,y:169.3},0).wait(1).to({rotation:833.2,y:169.2},0).wait(1).to({rotation:847,x:170.1},0).wait(1).to({rotation:860.3,y:169.1},0).wait(1).to({rotation:873.3,y:169},0).wait(1).to({rotation:885.8,y:168.9},0).wait(1).to({rotation:897.8,x:170,y:168.8},0).wait(1).to({rotation:909.5,x:170.1,y:168.7},0).wait(1).to({rotation:920.7,x:170.2,y:168.6},0).wait(1).to({rotation:931.5},0).wait(1).to({rotation:941.9,y:168.5},0).wait(1).to({rotation:951.9,x:170.3},0).wait(1).to({rotation:961.4,x:170.4,y:168.4},0).wait(1).to({rotation:970.5,x:170.5},0).wait(1).to({rotation:979.2,y:168.5},0).wait(1).to({rotation:987.5,x:170.6,y:168.4},0).wait(1).to({rotation:995.3,x:170.7},0).wait(1).to({rotation:1002.7,y:168.5},0).wait(1).to({rotation:1009.7,x:170.8},0).wait(1).to({rotation:1016.3,x:170.9},0).wait(1).to({rotation:1022.4,x:170.8},0).wait(1).to({rotation:1028.1,x:170.9,y:168.6},0).wait(1).to({rotation:1033.4,y:168.7},0).wait(1).to({rotation:1038.3,x:171},0).wait(1).to({rotation:1042.8},0).wait(1).to({rotation:1046.8},0).wait(1).to({rotation:1050.4},0).wait(1).to({rotation:1053.6,y:168.8},0).wait(1).to({rotation:1056.3},0).wait(1).to({rotation:1058.7},0).wait(1).to({rotation:1060.6},0).wait(1).to({rotation:1062,y:168.9},0).wait(1).to({rotation:1063.1},0).wait(1).to({rotation:1063.7,y:168.8},0).wait(1).to({rotation:1064},0).to({_off:true},1).wait(1584));
+	this.timeline.addTween(cjs.Tween.get(this.wheel3).wait(144).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:25.4,x:171.3,y:168.9},0).wait(1).to({rotation:54.4,x:171.2,y:169.1},0).wait(1).to({rotation:83.1,y:169.2},0).wait(1).to({rotation:111.3,x:171,y:169.3},0).wait(1).to({rotation:139,x:170.9},0).wait(1).to({rotation:166.4,x:170.7,y:169.2},0).wait(1).to({rotation:193.3,x:170.6,y:169.1},0).wait(1).to({rotation:219.9,y:169},0).wait(1).to({rotation:246,y:168.8},0).wait(1).to({rotation:271.7,x:170.8,y:168.7},0).wait(1).to({rotation:297,x:170.9,y:168.6},0).wait(1).to({rotation:321.8,x:171,y:168.7},0).wait(1).to({rotation:346.3,x:171.2},0).wait(1).to({rotation:370.3,y:168.9},0).wait(1).to({rotation:393.9,y:169},0).wait(1).to({rotation:417.1,y:169.1},0).wait(1).to({rotation:439.8,y:169.2},0).wait(1).to({rotation:462.2,x:171,y:169.3},0).wait(1).to({rotation:484.1},0).wait(1).to({rotation:505.6,x:170.8,y:169.2},0).wait(1).to({rotation:526.7,x:170.7},0).wait(1).to({rotation:547.4,x:170.6,y:169.1},0).wait(1).to({rotation:567.7},0).wait(1).to({rotation:587.5,y:168.9},0).wait(1).to({rotation:607,y:168.8},0).wait(1).to({rotation:626,x:170.7,y:168.7},0).wait(1).to({rotation:644.6,x:170.8},0).wait(1).to({rotation:662.7,x:170.9},0).wait(1).to({rotation:680.5,x:171,y:168.6},0).wait(1).to({rotation:697.8,x:171.1,y:168.7},0).wait(1).to({rotation:714.7,x:171.2,y:168.8},0).wait(1).to({rotation:731.2,y:168.9},0).wait(1).to({rotation:747.3,x:171.3},0).wait(1).to({rotation:763,x:171.2,y:169},0).wait(1).to({rotation:778.2,y:169.1},0).wait(1).to({rotation:793.1,x:171.1,y:169.2},0).wait(1).to({rotation:807.5,y:169.3},0).wait(1).to({rotation:821.5},0).wait(1).to({rotation:835.1,x:171},0).wait(1).to({rotation:848.2,x:170.9},0).wait(1).to({rotation:860.9,x:170.8},0).wait(1).to({rotation:873.3,y:169.2},0).wait(1).to({rotation:885.2,x:170.7},0).wait(1).to({rotation:896.7},0).wait(1).to({rotation:907.7,y:169.1},0).wait(1).to({rotation:918.4,x:170.6},0).wait(1).to({rotation:928.6,y:169},0).wait(1).to({rotation:938.5},0).wait(1).to({rotation:947.9,y:168.9},0).wait(1).to({rotation:956.8},0).wait(1).to({rotation:965.4,y:168.8},0).wait(1).to({rotation:973.5,x:170.7},0).wait(1).to({rotation:981.3,y:168.7},0).wait(1).to({rotation:988.6},0).wait(1).to({rotation:995.5,x:170.8},0).wait(1).to({rotation:1001.9},0).wait(1).to({rotation:1008,y:168.6},0).wait(1).to({rotation:1013.6,x:170.9,y:168.7},0).wait(1).to({rotation:1018.9},0).wait(1).to({rotation:1023.7,y:168.6},0).wait(1).to({rotation:1028.1,x:171,y:168.7},0).wait(1).to({rotation:1032},0).wait(1).to({rotation:1035.6},0).wait(1).to({rotation:1038.7,y:168.6},0).wait(1).to({rotation:1041.4,y:168.7},0).wait(1).to({rotation:1043.7,x:171.1},0).wait(1).to({rotation:1045.6,y:168.6},0).wait(1).to({rotation:1047.1},0).wait(1).to({rotation:1048.1,y:168.7},0).wait(1).to({rotation:1048.7},0).wait(1).to({rotation:1049,y:168.6},0).to({_off:true},1).wait(1512));
+	this.timeline.addTween(cjs.Tween.get(this.wheel4).wait(216).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:25,x:170.8,y:169.3},0).wait(1).to({rotation:53.6,x:170.7,y:169.4},0).wait(1).to({rotation:81.8,x:170.4},0).wait(1).to({rotation:109.6,x:170.3,y:169.3},0).wait(1).to({rotation:137,x:170.1,y:169.2},0).wait(1).to({rotation:164,x:170,y:168.9},0).wait(1).to({rotation:190.5,x:170.1,y:168.8},0).wait(1).to({rotation:216.7,x:170.2,y:168.6},0).wait(1).to({rotation:242.4,x:170.4,y:168.5},0).wait(1).to({rotation:267.8,x:170.6},0).wait(1).to({rotation:292.7,x:170.8,y:168.6},0).wait(1).to({rotation:317.2,x:170.9,y:168.7},0).wait(1).to({rotation:341.3,x:171,y:168.9},0).wait(1).to({rotation:364.9,x:170.9,y:169.1},0).wait(1).to({rotation:388.2,x:170.8,y:169.3},0).wait(1).to({rotation:411.1,x:170.7,y:169.4},0).wait(1).to({rotation:433.5,x:170.5},0).wait(1).to({rotation:455.5,x:170.4,y:169.3},0).wait(1).to({rotation:477.2,x:170.2,y:169.2},0).wait(1).to({rotation:498.4,x:170.1},0).wait(1).to({rotation:519.2,y:169},0).wait(1).to({rotation:539.6,x:170,y:168.8},0).wait(1).to({rotation:559.5,x:170.1,y:168.7},0).wait(1).to({rotation:579.1,x:170.2,y:168.6},0).wait(1).to({rotation:598.3,x:170.3,y:168.5},0).wait(1).to({rotation:617,x:170.5},0).wait(1).to({rotation:635.3,x:170.6},0).wait(1).to({rotation:653.2,x:170.8},0).wait(1).to({rotation:670.7,x:170.9,y:168.7},0).wait(1).to({rotation:687.8,x:171,y:168.8},0).wait(1).to({rotation:704.5,y:168.9},0).wait(1).to({rotation:720.8,y:169.1},0).wait(1).to({rotation:736.6,x:170.9,y:169.2},0).wait(1).to({rotation:752.1,x:170.8,y:169.3},0).wait(1).to({rotation:767.1,x:170.7,y:169.4},0).wait(1).to({rotation:781.7,x:170.6},0).wait(1).to({rotation:795.9,x:170.5,y:169.5},0).wait(1).to({rotation:809.7,x:170.4,y:169.4},0).wait(1).to({rotation:823.1,x:170.3,y:169.3},0).wait(1).to({rotation:836.1,x:170.2},0).wait(1).to({rotation:848.6,y:169.2},0).wait(1).to({rotation:860.8,x:170.1,y:169.1},0).wait(1).to({rotation:872.5,x:170,y:169},0).wait(1).to({rotation:883.8,y:168.9},0).wait(1).to({rotation:894.8},0).wait(1).to({rotation:905.3,x:170.1,y:168.8},0).wait(1).to({rotation:915.4,y:168.7},0).wait(1).to({rotation:925},0).wait(1).to({rotation:934.3,x:170.2,y:168.6},0).wait(1).to({rotation:943.1,x:170.3,y:168.5},0).wait(1).to({rotation:951.6},0).wait(1).to({rotation:959.6,x:170.4},0).wait(1).to({rotation:967.2},0).wait(1).to({rotation:974.4,x:170.5},0).wait(1).to({rotation:981.2},0).wait(1).to({rotation:987.6,x:170.6},0).wait(1).to({rotation:993.6,x:170.7},0).wait(1).to({rotation:999.2},0).wait(1).to({rotation:1004.3},0).wait(1).to({rotation:1009,x:170.8,y:168.6},0).wait(1).to({rotation:1013.4,y:168.5},0).wait(1).to({rotation:1017.3},0).wait(1).to({rotation:1020.8,y:168.6},0).wait(1).to({rotation:1023.9,x:170.9},0).wait(1).to({rotation:1026.5},0).wait(1).to({rotation:1028.8,y:168.7},0).wait(1).to({rotation:1030.7},0).wait(1).to({rotation:1032.1},0).wait(1).to({rotation:1033.1},0).wait(1).to({rotation:1033.7},0).wait(1).to({rotation:1034},0).to({_off:true},1).wait(1440));
+	this.timeline.addTween(cjs.Tween.get(this.wheel5).wait(288).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:24.6,x:170.9,y:169.4},0).wait(1).to({rotation:52.8,x:170.8,y:169.8},0).wait(1).to({rotation:80.7,x:170.5,y:170},0).wait(1).to({rotation:108.1,x:170.2,y:170.1},0).wait(1).to({rotation:135.1,x:169.8,y:170},0).wait(1).to({rotation:161.7,x:169.5,y:169.9},0).wait(1).to({rotation:187.9,x:169.3,y:169.5},0).wait(1).to({rotation:213.7,y:169.1},0).wait(1).to({rotation:239.1,x:169.5,y:168.8},0).wait(1).to({rotation:264.1,x:169.8,y:168.6},0).wait(1).to({rotation:288.7,x:170.1,y:168.5},0).wait(1).to({rotation:312.8,x:170.5,y:168.6},0).wait(1).to({rotation:336.6,x:170.7,y:168.7},0).wait(1).to({rotation:360,x:170.9,y:169},0).wait(1).to({rotation:382.9,y:169.4},0).wait(1).to({rotation:405.5,y:169.7},0).wait(1).to({rotation:427.6,x:170.7,y:169.9},0).wait(1).to({rotation:449.3,x:170.4,y:170.1},0).wait(1).to({rotation:470.7,x:170.2},0).wait(1).to({rotation:491.6,x:169.8,y:170},0).wait(1).to({rotation:512.1,x:169.6,y:169.9},0).wait(1).to({rotation:532.2,x:169.4,y:169.7},0).wait(1).to({rotation:551.9,x:169.3,y:169.4},0).wait(1).to({rotation:571.2,y:169.2},0).wait(1).to({rotation:590.1,x:169.4,y:168.9},0).wait(1).to({rotation:608.6,x:169.5,y:168.7},0).wait(1).to({rotation:626.7,x:169.8,y:168.6},0).wait(1).to({rotation:644.4,x:170,y:168.5},0).wait(1).to({rotation:661.6,x:170.3},0).wait(1).to({rotation:678.5,x:170.5,y:168.6},0).wait(1).to({rotation:694.9,x:170.7,y:168.7},0).wait(1).to({rotation:711,x:170.8,y:168.9},0).wait(1).to({rotation:726.6,x:170.9,y:169.1},0).wait(1).to({rotation:741.9,y:169.3},0).wait(1).to({rotation:756.7,y:169.6},0).wait(1).to({rotation:771.1,x:170.8,y:169.8},0).wait(1).to({rotation:785.1,x:170.7,y:169.9},0).wait(1).to({rotation:798.7,x:170.6,y:170},0).wait(1).to({rotation:811.9,x:170.4},0).wait(1).to({rotation:824.7,x:170.2,y:170.1},0).wait(1).to({rotation:837.1,x:170.1},0).wait(1).to({rotation:849.1,x:169.9,y:170},0).wait(1).to({rotation:860.7,x:169.7},0).wait(1).to({rotation:871.9,x:169.6,y:169.9},0).wait(1).to({rotation:882.6,x:169.5,y:169.8},0).wait(1).to({rotation:893,x:169.4,y:169.7},0).wait(1).to({rotation:903,x:169.3,y:169.5},0).wait(1).to({rotation:912.5,y:169.4},0).wait(1).to({rotation:921.6,y:169.3},0).wait(1).to({rotation:930.4,y:169.1},0).wait(1).to({rotation:938.7},0).wait(1).to({rotation:946.6,x:169.4,y:169},0).wait(1).to({rotation:954.1,x:169.5,y:168.9},0).wait(1).to({rotation:961.2,y:168.8},0).wait(1).to({rotation:968,x:169.6,y:168.7},0).wait(1).to({rotation:974.2},0).wait(1).to({rotation:980.1,x:169.7,y:168.6},0).wait(1).to({rotation:985.6,x:169.8},0).wait(1).to({rotation:990.7,x:169.9,y:168.5},0).wait(1).to({rotation:995.4},0).wait(1).to({rotation:999.6,x:170},0).wait(1).to({rotation:1003.5,x:170.1},0).wait(1).to({rotation:1007},0).wait(1).to({rotation:1010},0).wait(1).to({rotation:1012.6,x:170.2},0).wait(1).to({rotation:1014.9},0).wait(1).to({rotation:1016.7,x:170.3},0).wait(1).to({rotation:1018.1},0).wait(1).to({rotation:1019.1},0).wait(1).to({rotation:1019.7},0).wait(1).to({rotation:1020},0).to({_off:true},1).wait(1368));
+	this.timeline.addTween(cjs.Tween.get(this.wheel6).wait(360).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:24.1,x:170.8,y:169.3},0).wait(1).to({rotation:51.9,x:170.7,y:169.6},0).wait(1).to({rotation:79.3,x:170.4,y:169.9},0).wait(1).to({rotation:106.3,x:170.1},0).wait(1).to({rotation:132.9,x:169.8,y:169.8},0).wait(1).to({rotation:159.1,x:169.6,y:169.6},0).wait(1).to({rotation:184.9,x:169.4,y:169.3},0).wait(1).to({rotation:210.3,x:169.5,y:169},0).wait(1).to({rotation:235.3,x:169.6,y:168.8},0).wait(1).to({rotation:259.9,x:169.8,y:168.6},0).wait(1).to({rotation:284.1,x:170.1},0).wait(1).to({rotation:307.9,x:170.4,y:168.5},0).wait(1).to({rotation:331.3,x:170.7,y:168.7},0).wait(1).to({rotation:354.3,x:170.8,y:168.9},0).wait(1).to({rotation:376.9,y:169.3},0).wait(1).to({rotation:399.1,y:169.5},0).wait(1).to({rotation:420.9,x:170.6,y:169.7},0).wait(1).to({rotation:442.3,x:170.4,y:169.9},0).wait(1).to({rotation:463.3,x:170.2},0).wait(1).to({rotation:483.9,x:169.9,y:169.8},0).wait(1).to({rotation:504.1,x:169.7,y:169.7},0).wait(1).to({rotation:523.9,x:169.6,y:169.6},0).wait(1).to({rotation:543.2,x:169.4,y:169.4},0).wait(1).to({rotation:562.2,y:169.1},0).wait(1).to({rotation:580.8,x:169.5,y:168.9},0).wait(1).to({rotation:599,x:169.6,y:168.7},0).wait(1).to({rotation:616.8,x:169.8,y:168.6},0).wait(1).to({rotation:634.2,x:170,y:168.5},0).wait(1).to({rotation:651.2,x:170.2},0).wait(1).to({rotation:667.8,x:170.4,y:168.6},0).wait(1).to({rotation:684,x:170.6},0).wait(1).to({rotation:699.8,x:170.7,y:168.8},0).wait(1).to({rotation:715.2,x:170.8,y:168.9},0).wait(1).to({rotation:730.2,y:169.1},0).wait(1).to({rotation:744.8,y:169.3},0).wait(1).to({rotation:759,y:169.5},0).wait(1).to({rotation:772.8,x:170.7,y:169.6},0).wait(1).to({rotation:786.2,x:170.6,y:169.8},0).wait(1).to({rotation:799.2,x:170.4},0).wait(1).to({rotation:811.8,x:170.3,y:169.9},0).wait(1).to({rotation:824,x:170.1},0).wait(1).to({rotation:835.8,x:170},0).wait(1).to({rotation:847.2,x:169.9},0).wait(1).to({rotation:858.2,x:169.8,y:169.8},0).wait(1).to({rotation:868.8,x:169.7,y:169.7},0).wait(1).to({rotation:879,x:169.6,y:169.6},0).wait(1).to({rotation:888.8,y:169.5},0).wait(1).to({rotation:898.2,x:169.5,y:169.4},0).wait(1).to({rotation:907.2,x:169.4,y:169.3},0).wait(1).to({rotation:915.8,y:169.2},0).wait(1).to({rotation:924,x:169.5,y:169.1},0).wait(1).to({rotation:931.8,x:169.4,y:169},0).wait(1).to({rotation:939.2,y:168.9},0).wait(1).to({rotation:946.2,x:169.6},0).wait(1).to({rotation:952.8,x:169.5,y:168.8},0).wait(1).to({rotation:959,x:169.6},0).wait(1).to({rotation:964.8,x:169.7,y:168.7},0).wait(1).to({rotation:970.2,y:168.6},0).wait(1).to({rotation:975.2,y:168.7},0).wait(1).to({rotation:979.8,x:169.8,y:168.6},0).wait(1).to({rotation:984,x:169.9},0).wait(1).to({rotation:987.8},0).wait(1).to({rotation:991.2,x:170},0).wait(1).to({rotation:994.1,y:168.5},0).wait(1).to({rotation:996.7,x:170.1},0).wait(1).to({rotation:998.9},0).wait(1).to({rotation:1000.8},0).wait(1).to({rotation:1002.2},0).wait(1).to({rotation:1003.2,y:168.6},0).wait(1).to({rotation:1003.7,y:168.5},0).wait(1).to({rotation:1004},0).to({_off:true},1).wait(1296));
+	this.timeline.addTween(cjs.Tween.get(this.wheel7).wait(432).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:23.8,x:170.7,y:169.2},0).wait(1).to({rotation:51.2,y:169.3},0).wait(1).to({rotation:78.2,x:170.6},0).wait(1).to({rotation:104.8,x:170.5},0).wait(1).to({rotation:131,x:170.3},0).wait(1).to({rotation:156.9,y:169.2},0).wait(1).to({rotation:182.3,x:170.2,y:169.1},0).wait(1).to({rotation:207.3,y:169},0).wait(1).to({rotation:232,x:170.3,y:168.9},0).wait(1).to({rotation:256.2,x:170.4,y:168.8},0).wait(1).to({rotation:280.1,x:170.5},0).wait(1).to({rotation:303.6,x:170.6},0).wait(1).to({rotation:326.6,x:170.7,y:168.9},0).wait(1).to({rotation:349.3,y:169},0).wait(1).to({rotation:371.6,y:169.1},0).wait(1).to({rotation:393.5,y:169.2},0).wait(1).to({rotation:415,y:169.3},0).wait(1).to({rotation:436.1,x:170.6},0).wait(1).to({rotation:456.8,x:170.5},0).wait(1).to({rotation:477.1,x:170.4},0).wait(1).to({rotation:497,x:170.3},0).wait(1).to({rotation:516.5,x:170.2,y:169.2},0).wait(1).to({rotation:535.7,y:169.1},0).wait(1).to({rotation:554.4,y:169},0).wait(1).to({rotation:572.7},0).wait(1).to({rotation:590.7,x:170.3,y:168.9},0).wait(1).to({rotation:608.2,y:168.8},0).wait(1).to({rotation:625.4,x:170.4},0).wait(1).to({rotation:642.1,x:170.5},0).wait(1).to({rotation:658.5,x:170.6},0).wait(1).to({rotation:674.5,x:170.7},0).wait(1).to({rotation:690,y:168.9},0).wait(1).to({rotation:705.2,y:169},0).wait(1).to({rotation:720},0).wait(1).to({rotation:734.4,y:169.1},0).wait(1).to({rotation:748.4,y:169.2},0).wait(1).to({rotation:762,y:169.3},0).wait(1).to({rotation:775.2},0).wait(1).to({rotation:788,x:170.6},0).wait(1).to({rotation:800.5,x:170.5},0).wait(1).to({rotation:812.5,y:169.4},0).wait(1).to({rotation:824.1,x:170.4,y:169.3},0).wait(1).to({rotation:835.4},0).wait(1).to({rotation:846.2},0).wait(1).to({rotation:856.7,x:170.3,y:169.2},0).wait(1).to({rotation:866.7},0).wait(1).to({rotation:876.4},0).wait(1).to({rotation:885.7,x:170.2},0).wait(1).to({rotation:894.5,y:169.1},0).wait(1).to({rotation:903},0).wait(1).to({rotation:911.1},0).wait(1).to({rotation:918.8},0).wait(1).to({rotation:926.1,y:169},0).wait(1).to({rotation:933},0).wait(1).to({rotation:939.5},0).wait(1).to({rotation:945.6},0).wait(1).to({rotation:951.3,x:170.3,y:168.9},0).wait(1).to({rotation:956.6},0).wait(1).to({rotation:961.6},0).wait(1).to({rotation:966.1},0).wait(1).to({rotation:970.2},0).wait(1).to({rotation:974,y:168.8},0).wait(1).to({rotation:977.3,x:170.4},0).wait(1).to({rotation:980.3},0).wait(1).to({rotation:982.9},0).wait(1).to({rotation:985},0).wait(1).to({rotation:986.8},0).wait(1).to({rotation:988.2},0).wait(1).to({rotation:989.2},0).wait(1).to({rotation:989.8},0).wait(1).to({rotation:990},0).to({_off:true},1).wait(1224));
+	this.timeline.addTween(cjs.Tween.get(this.wheel8).wait(504).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:23.3,x:171,y:169},0).wait(1).to({rotation:50.3,y:169.1},0).wait(1).to({rotation:76.9,x:170.9,y:169.3},0).wait(1).to({rotation:103.2,x:170.8},0).wait(1).to({rotation:129,x:170.6,y:169.4},0).wait(1).to({rotation:154.4,x:170.5},0).wait(1).to({rotation:179.5,x:170.3,y:169.3},0).wait(1).to({rotation:204.1,x:170.2,y:169.1},0).wait(1).to({rotation:228.4,y:169},0).wait(1).to({rotation:252.3,x:170.3,y:168.9},0).wait(1).to({rotation:275.8,x:170.5,y:168.7},0).wait(1).to({rotation:298.9,x:170.6,y:168.6},0).wait(1).to({rotation:321.6,x:170.7,y:168.7},0).wait(1).to({rotation:344,x:170.9},0).wait(1).to({rotation:365.9,y:168.9},0).wait(1).to({rotation:387.5,x:171,y:169},0).wait(1).to({rotation:408.6,y:169.1},0).wait(1).to({rotation:429.4,x:170.9,y:169.3},0).wait(1).to({rotation:449.8,y:169.4},0).wait(1).to({rotation:469.8,x:170.7},0).wait(1).to({rotation:489.4,x:170.6},0).wait(1).to({rotation:508.7,x:170.5},0).wait(1).to({rotation:527.5,x:170.4,y:169.3},0).wait(1).to({rotation:546,x:170.3,y:169.2},0).wait(1).to({rotation:564,x:170.2},0).wait(1).to({rotation:581.7,y:169},0).wait(1).to({rotation:599,x:170.3,y:168.9},0).wait(1).to({rotation:615.9,y:168.8},0).wait(1).to({rotation:632.4,x:170.4,y:168.7},0).wait(1).to({rotation:648.5,x:170.6,y:168.6},0).wait(1).to({rotation:664.2,y:168.7},0).wait(1).to({rotation:679.6,x:170.8,y:168.6},0).wait(1).to({rotation:694.5},0).wait(1).to({rotation:709.1,x:170.9,y:168.7},0).wait(1).to({rotation:723.3,y:168.8},0).wait(1).to({rotation:737.1,x:171,y:168.9},0).wait(1).to({rotation:750.5,y:169},0).wait(1).to({rotation:763.5,x:171.1,y:169.1},0).wait(1).to({rotation:776.1,x:171,y:169.2},0).wait(1).to({rotation:788.3,y:169.3},0).wait(1).to({rotation:800.2,x:170.9},0).wait(1).to({rotation:811.6,x:170.8},0).wait(1).to({rotation:822.7,y:169.4},0).wait(1).to({rotation:833.4,x:170.7},0).wait(1).to({rotation:843.7},0).wait(1).to({rotation:853.6,x:170.6},0).wait(1).to({rotation:863.1,x:170.5},0).wait(1).to({rotation:872.2},0).wait(1).to({rotation:881,x:170.4},0).wait(1).to({rotation:889.3,y:169.3},0).wait(1).to({rotation:897.3},0).wait(1).to({rotation:904.8,x:170.3},0).wait(1).to({rotation:912,y:169.2},0).wait(1).to({rotation:918.8},0).wait(1).to({rotation:925.2,x:170.2,y:169.1},0).wait(1).to({rotation:931.3,x:170.3,y:169},0).wait(1).to({rotation:936.9,x:170.2},0).wait(1).to({rotation:942.1},0).wait(1).to({rotation:947},0).wait(1).to({rotation:951.5},0).wait(1).to({rotation:955.5,x:170.3,y:168.9},0).wait(1).to({rotation:959.2,x:170.2},0).wait(1).to({rotation:962.5,x:170.3},0).wait(1).to({rotation:965.4},0).wait(1).to({rotation:968,y:168.8},0).wait(1).to({rotation:970.1},0).wait(1).to({rotation:971.8},0).wait(1).to({rotation:973.2},0).wait(1).to({rotation:974.2},0).wait(1).to({rotation:974.8},0).wait(1).to({rotation:975},0).to({_off:true},1).wait(1152));
+	this.timeline.addTween(cjs.Tween.get(this.wheel9).wait(576).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:22.9,x:170.6,y:169},0).wait(1).to({rotation:49.5,x:170.5,y:169.2},0).wait(1).to({rotation:75.7,y:169.3},0).wait(1).to({rotation:101.5,x:170.4,y:169.4},0).wait(1).to({rotation:126.9,x:170.2},0).wait(1).to({rotation:152,x:170.1},0).wait(1).to({rotation:176.7,x:170,y:169.3},0).wait(1).to({rotation:201,x:169.9,y:169.2},0).wait(1).to({rotation:224.9,y:169},0).wait(1).to({rotation:248.4,y:168.9},0).wait(1).to({rotation:271.5,x:170.1,y:168.8},0).wait(1).to({rotation:294.3,x:170.2},0).wait(1).to({rotation:316.7,x:170.3},0).wait(1).to({rotation:338.6,x:170.4},0).wait(1).to({rotation:360.2,y:168.9},0).wait(1).to({rotation:381.5,x:170.5,y:169},0).wait(1).to({rotation:402.3,x:170.6,y:169.1},0).wait(1).to({rotation:422.8,x:170.5,y:169.2},0).wait(1).to({rotation:442.9,x:170.4,y:169.3},0).wait(1).to({rotation:462.6,x:170.3},0).wait(1).to({rotation:481.9,x:170.2,y:169.4},0).wait(1).to({rotation:500.8},0).wait(1).to({rotation:519.4,x:170.1},0).wait(1).to({rotation:537.5,x:170,y:169.3},0).wait(1).to({rotation:555.3,x:169.9,y:169.2},0).wait(1).to({rotation:572.7,y:169.1},0).wait(1).to({rotation:589.7,y:169},0).wait(1).to({rotation:606.4,x:170,y:168.9},0).wait(1).to({rotation:622.6,y:168.8},0).wait(1).to({rotation:638.5,x:170.1},0).wait(1).to({rotation:654,x:170.2,y:168.7},0).wait(1).to({rotation:669.1,x:170.3},0).wait(1).to({rotation:683.8,y:168.8},0).wait(1).to({rotation:698.2,x:170.4},0).wait(1).to({rotation:712.1,x:170.5},0).wait(1).to({rotation:725.7,y:168.9},0).wait(1).to({rotation:738.9,y:169},0).wait(1).to({rotation:751.7,y:169.1},0).wait(1).to({rotation:764.1,x:170.6},0).wait(1).to({rotation:776.2,x:170.5,y:169.2},0).wait(1).to({rotation:787.8,y:169.3},0).wait(1).to({rotation:799.1},0).wait(1).to({rotation:810,x:170.4},0).wait(1).to({rotation:820.6,y:169.4},0).wait(1).to({rotation:830.7,x:170.3,y:169.3},0).wait(1).to({rotation:840.4,y:169.4},0).wait(1).to({rotation:849.8,x:170.2},0).wait(1).to({rotation:858.8},0).wait(1).to({rotation:867.4,x:170.1},0).wait(1).to({rotation:875.6,y:169.3},0).wait(1).to({rotation:883.5,y:169.4},0).wait(1).to({rotation:890.9,x:170,y:169.3},0).wait(1).to({rotation:898},0).wait(1).to({rotation:904.7,x:169.9,y:169.2},0).wait(1).to({rotation:911},0).wait(1).to({rotation:916.9},0).wait(1).to({rotation:922.5},0).wait(1).to({rotation:927.6,y:169.1},0).wait(1).to({rotation:932.4},0).wait(1).to({rotation:936.8},0).wait(1).to({rotation:940.8},0).wait(1).to({rotation:944.5},0).wait(1).to({rotation:947.7,y:169},0).wait(1).to({rotation:950.6},0).wait(1).to({rotation:953.1},0).wait(1).to({rotation:955.2},0).wait(1).to({rotation:956.9},0).wait(1).to({rotation:958.2},0).wait(1).to({rotation:959.2},0).wait(1).to({rotation:959.8,y:168.9},0).wait(1).to({rotation:960},0).to({_off:true},1).wait(1080));
+	this.timeline.addTween(cjs.Tween.get(this.wheel10).wait(648).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:22.5,x:170.6,y:169},0).wait(1).to({rotation:48.7,x:170.7,y:169.2},0).wait(1).to({rotation:74.5,x:170.5,y:169.3},0).wait(1).to({rotation:99.9,y:169.4},0).wait(1).to({rotation:124.9,x:170.3},0).wait(1).to({rotation:149.6,x:170.2,y:169.3},0).wait(1).to({rotation:173.9,x:170},0).wait(1).to({rotation:197.8,y:169.2},0).wait(1).to({rotation:221.3,y:169.1},0).wait(1).to({rotation:244.5,y:168.9},0).wait(1).to({rotation:267.2,x:170.1,y:168.8},0).wait(1).to({rotation:289.6,x:170.3},0).wait(1).to({rotation:311.7,x:170.4,y:168.7},0).wait(1).to({rotation:333.3,x:170.5,y:168.8},0).wait(1).to({rotation:354.6,x:170.6},0).wait(1).to({rotation:375.5,y:169},0).wait(1).to({rotation:396,y:169.1},0).wait(1).to({rotation:416.1,y:169.2},0).wait(1).to({rotation:435.9,y:169.3},0).wait(1).to({rotation:455.3,x:170.5,y:169.4},0).wait(1).to({rotation:474.3,x:170.4},0).wait(1).to({rotation:493,x:170.3},0).wait(1).to({rotation:511.2,x:170.2,y:169.3},0).wait(1).to({rotation:529.1,x:170.1},0).wait(1).to({rotation:546.6,x:170,y:169.2},0).wait(1).to({rotation:563.7,x:170.1},0).wait(1).to({rotation:580.5,x:170,y:169.1},0).wait(1).to({rotation:596.9,y:169},0).wait(1).to({rotation:612.9,x:170.1,y:168.9},0).wait(1).to({rotation:628.5,y:168.8},0).wait(1).to({rotation:643.7,x:170.2},0).wait(1).to({rotation:658.6,x:170.3},0).wait(1).to({rotation:673.1,x:170.4,y:168.7},0).wait(1).to({rotation:687.2,x:170.5,y:168.8},0).wait(1).to({rotation:701,x:170.6},0).wait(1).to({rotation:714.3,y:168.9},0).wait(1).to({rotation:727.3},0).wait(1).to({rotation:739.9,y:169},0).wait(1).to({rotation:752.2,y:169.1},0).wait(1).to({rotation:764,x:170.7},0).wait(1).to({rotation:775.5,x:170.6,y:169.2},0).wait(1).to({rotation:786.6,y:169.3},0).wait(1).to({rotation:797.4},0).wait(1).to({rotation:807.7,x:170.5},0).wait(1).to({rotation:817.7,y:169.4},0).wait(1).to({rotation:827.3,x:170.4,y:169.3},0).wait(1).to({rotation:836.5,y:169.4},0).wait(1).to({rotation:845.4},0).wait(1).to({rotation:853.8,x:170.3},0).wait(1).to({rotation:861.9,x:170.2},0).wait(1).to({rotation:869.7},0).wait(1).to({rotation:877,x:170.1},0).wait(1).to({rotation:884},0).wait(1).to({rotation:890.6,y:169.3},0).wait(1).to({rotation:896.8,x:170,y:169.2},0).wait(1).to({rotation:902.6,x:170.1,y:169.3},0).wait(1).to({rotation:908.1,x:170,y:169.2},0).wait(1).to({rotation:913.1},0).wait(1).to({rotation:917.8},0).wait(1).to({rotation:922.2},0).wait(1).to({rotation:926.1,y:169.1},0).wait(1).to({rotation:929.7},0).wait(1).to({rotation:932.9},0).wait(1).to({rotation:935.7,x:169.9},0).wait(1).to({rotation:938.2,x:170,y:169},0).wait(1).to({rotation:940.2,y:169.1},0).wait(1).to({rotation:941.9},0).wait(1).to({rotation:943.3,y:169},0).wait(1).to({rotation:944.2},0).wait(1).to({rotation:944.8,y:169.1},0).wait(1).to({rotation:945,y:169},0).to({_off:true},1).wait(1008));
+	this.timeline.addTween(cjs.Tween.get(this.wheel11).wait(720).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:22.1,x:170.5,y:169},0).wait(1).to({rotation:47.8,x:170.6,y:169.2},0).wait(1).to({rotation:73.2,x:170.5,y:169.3},0).wait(1).to({rotation:98.2},0).wait(1).to({rotation:122.9,x:170.3,y:169.4},0).wait(1).to({rotation:147.1,x:170.1},0).wait(1).to({rotation:171,x:170,y:169.3},0).wait(1).to({rotation:194.6,y:169.2},0).wait(1).to({rotation:217.7,x:169.9,y:169.1},0).wait(1).to({rotation:240.5,x:170,y:169},0).wait(1).to({rotation:262.9,y:168.9},0).wait(1).to({rotation:285,x:170.2,y:168.8},0).wait(1).to({rotation:306.7,x:170.3,y:168.7},0).wait(1).to({rotation:328,x:170.4,y:168.8},0).wait(1).to({rotation:348.9,x:170.5},0).wait(1).to({rotation:369.5,y:169},0).wait(1).to({rotation:389.7,x:170.6,y:169.1},0).wait(1).to({rotation:409.5,x:170.5,y:169.2},0).wait(1).to({rotation:429,y:169.3},0).wait(1).to({rotation:448},0).wait(1).to({rotation:466.8,x:170.4,y:169.4},0).wait(1).to({rotation:485.1,x:170.3},0).wait(1).to({rotation:503.1,x:170.2},0).wait(1).to({rotation:520.7,x:170.1,y:169.3},0).wait(1).to({rotation:537.9,x:170},0).wait(1).to({rotation:554.8,y:169.2},0).wait(1).to({rotation:571.3,y:169.1},0).wait(1).to({rotation:587.4,y:169},0).wait(1).to({rotation:603.1},0).wait(1).to({rotation:618.5,y:168.9},0).wait(1).to({rotation:633.5,x:170.1,y:168.8},0).wait(1).to({rotation:648.1,x:170.2},0).wait(1).to({rotation:662.4,x:170.3,y:168.7},0).wait(1).to({rotation:676.3,y:168.8},0).wait(1).to({rotation:689.8,x:170.4},0).wait(1).to({rotation:703,x:170.5},0).wait(1).to({rotation:715.8,x:170.6},0).wait(1).to({rotation:728.2,x:170.5,y:169},0).wait(1).to({rotation:740.2,x:170.6},0).wait(1).to({rotation:751.9,y:169.1},0).wait(1).to({rotation:763.2},0).wait(1).to({rotation:774.1,y:169.2},0).wait(1).to({rotation:784.7,x:170.5,y:169.3},0).wait(1).to({rotation:794.9},0).wait(1).to({rotation:804.7,y:169.4},0).wait(1).to({rotation:814.2,x:170.4,y:169.3},0).wait(1).to({rotation:823.2},0).wait(1).to({rotation:831.9,y:169.4},0).wait(1).to({rotation:840.3,x:170.3},0).wait(1).to({rotation:848.2},0).wait(1).to({rotation:855.8,x:170.2},0).wait(1).to({rotation:863.1,x:170.1},0).wait(1).to({rotation:869.9,x:170.2},0).wait(1).to({rotation:876.4,x:170.1,y:169.3},0).wait(1).to({rotation:882.5,y:169.4},0).wait(1).to({rotation:888.3,y:169.3},0).wait(1).to({rotation:893.6},0).wait(1).to({rotation:898.6,x:170},0).wait(1).to({rotation:903.3},0).wait(1).to({rotation:907.5,y:169.2},0).wait(1).to({rotation:911.4},0).wait(1).to({rotation:915},0).wait(1).to({rotation:918.1,x:169.9},0).wait(1).to({rotation:920.9,x:170},0).wait(1).to({rotation:923.3},0).wait(1).to({rotation:925.3},0).wait(1).to({rotation:927,y:169.1},0).wait(1).to({rotation:928.3,x:169.9,y:169.2},0).wait(1).to({rotation:929.2,y:169.1},0).wait(1).to({rotation:929.8},0).wait(1).to({rotation:930},0).to({_off:true},1).wait(936));
+	this.timeline.addTween(cjs.Tween.get(this.wheel12).wait(792).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:21.7,x:170.6},0).wait(1).to({rotation:47,y:169.2},0).wait(1).to({rotation:72,y:169.3},0).wait(1).to({rotation:96.6,x:170.5},0).wait(1).to({rotation:120.8,x:170.4,y:169.4},0).wait(1).to({rotation:144.7,x:170.2,y:169.3},0).wait(1).to({rotation:168.2,x:170.1},0).wait(1).to({rotation:191.4,y:169.2},0).wait(1).to({rotation:214.2,y:169.1},0).wait(1).to({rotation:236.6,y:168.9},0).wait(1).to({rotation:258.7,x:170.2},0).wait(1).to({rotation:280.3,x:170.3,y:168.8},0).wait(1).to({rotation:301.7,x:170.4},0).wait(1).to({rotation:322.6,x:170.5},0).wait(1).to({rotation:343.2,x:170.6,y:168.9},0).wait(1).to({rotation:363.5,x:170.7,y:169},0).wait(1).to({rotation:383.4,x:170.6,y:169.1},0).wait(1).to({rotation:402.9,x:170.7,y:169.2},0).wait(1).to({rotation:422,x:170.6,y:169.3},0).wait(1).to({rotation:440.8},0).wait(1).to({rotation:459.2,x:170.5},0).wait(1).to({rotation:477.2,x:170.4},0).wait(1).to({rotation:494.9,x:170.3},0).wait(1).to({rotation:512.2,x:170.2},0).wait(1).to({rotation:529.2,x:170.1},0).wait(1).to({rotation:545.8,y:169.2},0).wait(1).to({rotation:562,x:170,y:169.1},0).wait(1).to({rotation:577.9,x:170.1},0).wait(1).to({rotation:593.4,y:168.9},0).wait(1).to({rotation:608.5,x:170.2},0).wait(1).to({rotation:623.3,y:168.8},0).wait(1).to({rotation:637.7,x:170.3},0).wait(1).to({rotation:651.7,x:170.4},0).wait(1).to({rotation:665.4},0).wait(1).to({rotation:678.7,x:170.5,y:168.7},0).wait(1).to({rotation:691.6,x:170.6,y:168.8},0).wait(1).to({rotation:704.2,y:168.9},0).wait(1).to({rotation:716.4},0).wait(1).to({rotation:728.3,x:170.7,y:169},0).wait(1).to({rotation:739.8,x:170.6},0).wait(1).to({rotation:750.9,y:169.1},0).wait(1).to({rotation:761.6,y:169.2},0).wait(1).to({rotation:772},0).wait(1).to({rotation:782.1,y:169.3},0).wait(1).to({rotation:791.7},0).wait(1).to({rotation:801,x:170.5},0).wait(1).to({rotation:810},0).wait(1).to({rotation:818.5,y:169.4},0).wait(1).to({rotation:826.7,x:170.4},0).wait(1).to({rotation:834.6},0).wait(1).to({rotation:842},0).wait(1).to({rotation:849.1,x:170.3},0).wait(1).to({rotation:855.9},0).wait(1).to({rotation:862.3,y:169.3},0).wait(1).to({rotation:868.3,x:170.2},0).wait(1).to({rotation:873.9},0).wait(1).to({rotation:879.2},0).wait(1).to({rotation:884.1,x:170.1},0).wait(1).to({rotation:888.7},0).wait(1).to({rotation:892.9},0).wait(1).to({rotation:896.7},0).wait(1).to({rotation:900.2,y:169.2},0).wait(1).to({rotation:903.3},0).wait(1).to({rotation:906},0).wait(1).to({rotation:908.4},0).wait(1).to({rotation:910.4,x:170},0).wait(1).to({rotation:912,x:170.1},0).wait(1).to({rotation:913.3},0).wait(1).to({rotation:914.2},0).wait(1).to({rotation:914.8},0).wait(1).to({rotation:915},0).to({_off:true},1).wait(864));
+	this.timeline.addTween(cjs.Tween.get(this.wheel13).wait(864).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:21.2,x:170.6,y:169},0).wait(1).to({rotation:46.2,y:169.1},0).wait(1).to({rotation:70.7,y:169.3},0).wait(1).to({rotation:94.9,x:170.5},0).wait(1).to({rotation:118.8,x:170.4,y:169.4},0).wait(1).to({rotation:142.3,x:170.2},0).wait(1).to({rotation:165.4,y:169.3},0).wait(1).to({rotation:188.2,x:170.1},0).wait(1).to({rotation:210.6,x:170,y:169.1},0).wait(1).to({rotation:232.7,y:169},0).wait(1).to({rotation:254.4,y:168.9},0).wait(1).to({rotation:275.7,x:170.2,y:168.8},0).wait(1).to({rotation:296.7,x:170.3},0).wait(1).to({rotation:317.3,x:170.4,y:168.7},0).wait(1).to({rotation:337.6,x:170.6,y:168.8},0).wait(1).to({rotation:357.5,y:168.9},0).wait(1).to({rotation:377,y:169},0).wait(1).to({rotation:396.2,x:170.7,y:169.1},0).wait(1).to({rotation:415.1,x:170.6,y:169.2},0).wait(1).to({rotation:433.5,y:169.3},0).wait(1).to({rotation:451.6,x:170.5},0).wait(1).to({rotation:469.4,x:170.4},0).wait(1).to({rotation:486.8,x:170.3,y:169.4},0).wait(1).to({rotation:503.8,x:170.2},0).wait(1).to({rotation:520.5,x:170.1},0).wait(1).to({rotation:536.8,y:169.3},0).wait(1).to({rotation:552.8,x:170,y:169.2},0).wait(1).to({rotation:568.4},0).wait(1).to({rotation:583.6,y:169},0).wait(1).to({rotation:598.5},0).wait(1).to({rotation:613,y:168.9},0).wait(1).to({rotation:627.2,x:170.1,y:168.8},0).wait(1).to({rotation:641,x:170.2},0).wait(1).to({rotation:654.5,x:170.3},0).wait(1).to({rotation:667.5},0).wait(1).to({rotation:680.3,x:170.5},0).wait(1).to({rotation:692.7,y:168.7},0).wait(1).to({rotation:704.7,x:170.6,y:168.8},0).wait(1).to({rotation:716.3,y:168.9},0).wait(1).to({rotation:727.6,y:169},0).wait(1).to({rotation:738.6},0).wait(1).to({rotation:749.1,y:169.1},0).wait(1).to({rotation:759.4},0).wait(1).to({rotation:769.2,x:170.7,y:169.2},0).wait(1).to({rotation:778.7,x:170.6},0).wait(1).to({rotation:787.9},0).wait(1).to({rotation:796.7,y:169.3},0).wait(1).to({rotation:805.1,x:170.5,y:169.4},0).wait(1).to({rotation:813.2,y:169.3},0).wait(1).to({rotation:820.9},0).wait(1).to({rotation:828.2,y:169.4},0).wait(1).to({rotation:835.2,x:170.4},0).wait(1).to({rotation:841.9},0).wait(1).to({rotation:848.1,x:170.3},0).wait(1).to({rotation:854.1},0).wait(1).to({rotation:859.6},0).wait(1).to({rotation:864.8,x:170.2},0).wait(1).to({rotation:869.6},0).wait(1).to({rotation:874.1},0).wait(1).to({rotation:878.3,y:169.3},0).wait(1).to({rotation:882},0).wait(1).to({rotation:885.4,x:170.1,y:169.4},0).wait(1).to({rotation:888.5,y:169.3},0).wait(1).to({rotation:891.2},0).wait(1).to({rotation:893.5},0).wait(1).to({rotation:895.5},0).wait(1).to({rotation:897.1,x:170},0).wait(1).to({rotation:898.3,x:170.1,y:169.2},0).wait(1).to({rotation:899.2,x:170,y:169.3},0).wait(1).to({rotation:899.8,x:170.1,y:169.2},0).wait(1).to({rotation:900,y:169.3},0).to({_off:true},1).wait(792));
+	this.timeline.addTween(cjs.Tween.get(this.wheel14).wait(936).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:20.8,x:170.9},0).wait(1).to({rotation:45.4,y:169.1},0).wait(1).to({rotation:69.6,y:169.2},0).wait(1).to({rotation:93.4,x:170.8,y:169.3},0).wait(1).to({rotation:116.9,x:170.7},0).wait(1).to({rotation:140,x:170.6},0).wait(1).to({rotation:162.8,x:170.4},0).wait(1).to({rotation:185.2,x:170.3,y:169.2},0).wait(1).to({rotation:207.3,y:169.1},0).wait(1).to({rotation:229,y:169},0).wait(1).to({rotation:250.4,x:170.4,y:168.8},0).wait(1).to({rotation:271.4,x:170.5},0).wait(1).to({rotation:292,y:168.7},0).wait(1).to({rotation:312.3,x:170.7},0).wait(1).to({rotation:332.3,x:170.8},0).wait(1).to({rotation:351.9,x:170.9,y:168.8},0).wait(1).to({rotation:371.1,y:168.9},0).wait(1).to({rotation:390,y:169},0).wait(1).to({rotation:408.6,y:169.1},0).wait(1).to({rotation:426.7,y:169.2},0).wait(1).to({rotation:444.6,x:170.8,y:169.3},0).wait(1).to({rotation:462.1},0).wait(1).to({rotation:479.2,x:170.7},0).wait(1).to({rotation:496,x:170.6},0).wait(1).to({rotation:512.4,x:170.5},0).wait(1).to({rotation:528.4,x:170.4},0).wait(1).to({rotation:544.2,y:169.2},0).wait(1).to({rotation:559.5,x:170.3,y:169.1},0).wait(1).to({rotation:574.5},0).wait(1).to({rotation:589.2,y:169},0).wait(1).to({rotation:603.5,y:168.8},0).wait(1).to({rotation:617.4,x:170.4},0).wait(1).to({rotation:631},0).wait(1).to({rotation:644.3,x:170.6,y:168.7},0).wait(1).to({rotation:657.1},0).wait(1).to({rotation:669.7,x:170.7},0).wait(1).to({rotation:681.9},0).wait(1).to({rotation:693.7,x:170.8},0).wait(1).to({rotation:705.2},0).wait(1).to({rotation:716.3,x:170.9,y:168.8},0).wait(1).to({rotation:727.1,y:168.9},0).wait(1).to({rotation:737.5,y:169},0).wait(1).to({rotation:747.5},0).wait(1).to({rotation:757.3,y:169.1},0).wait(1).to({rotation:766.6},0).wait(1).to({rotation:775.6,y:169.2},0).wait(1).to({rotation:784.3},0).wait(1).to({rotation:792.6},0).wait(1).to({rotation:800.5,y:169.3},0).wait(1).to({rotation:808.1,x:170.8},0).wait(1).to({rotation:815.3},0).wait(1).to({rotation:822.2},0).wait(1).to({rotation:828.8,x:170.7},0).wait(1).to({rotation:834.9},0).wait(1).to({rotation:840.8,x:170.6},0).wait(1).to({rotation:846.2},0).wait(1).to({rotation:851.4},0).wait(1).to({rotation:856.1},0).wait(1).to({rotation:860.5},0).wait(1).to({rotation:864.6,x:170.5},0).wait(1).to({rotation:868.3},0).wait(1).to({rotation:871.7},0).wait(1).to({rotation:874.7},0).wait(1).to({rotation:877.3},0).wait(1).to({rotation:879.6,x:170.4},0).wait(1).to({rotation:881.5},0).wait(1).to({rotation:883.1},0).wait(1).to({rotation:884.4},0).wait(1).to({rotation:885.2},0).wait(1).to({rotation:885.8},0).wait(1).to({rotation:886},0).to({_off:true},1).wait(720));
+	this.timeline.addTween(cjs.Tween.get(this.wheel15).wait(1008).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:20.4,x:170.9,y:169.2},0).wait(1).to({rotation:44.6,x:170.8,y:169.4},0).wait(1).to({rotation:68.3,x:170.5,y:169.5},0).wait(1).to({rotation:91.8,x:170.4,y:169.4},0).wait(1).to({rotation:114.9,x:170.2,y:169.3},0).wait(1).to({rotation:137.6,x:170.1,y:169.2},0).wait(1).to({rotation:160,y:169},0).wait(1).to({rotation:182,y:168.8},0).wait(1).to({rotation:203.7,x:170.2,y:168.7},0).wait(1).to({rotation:225.1,y:168.6},0).wait(1).to({rotation:246.1,x:170.4,y:168.5},0).wait(1).to({rotation:266.7,x:170.6},0).wait(1).to({rotation:287,x:170.8},0).wait(1).to({rotation:307,x:170.9,y:168.6},0).wait(1).to({rotation:326.6,x:171,y:168.8},0).wait(1).to({rotation:345.9,y:168.9},0).wait(1).to({rotation:364.8,x:170.9,y:169.1},0).wait(1).to({rotation:383.4,y:169.3},0).wait(1).to({rotation:401.6,x:170.8,y:169.4},0).wait(1).to({rotation:419.5,x:170.6},0).wait(1).to({rotation:437,x:170.5,y:169.5},0).wait(1).to({rotation:454.2,x:170.3,y:169.4},0).wait(1).to({rotation:471,x:170.2,y:169.3},0).wait(1).to({rotation:487.5,x:170.1,y:169.2},0).wait(1).to({rotation:503.7,y:169.1},0).wait(1).to({rotation:519.5,y:169},0).wait(1).to({rotation:534.9,x:170,y:168.8},0).wait(1).to({rotation:550,y:168.7},0).wait(1).to({rotation:564.8,x:170.1},0).wait(1).to({rotation:579.2,x:170.2,y:168.6},0).wait(1).to({rotation:593.2,x:170.3,y:168.5},0).wait(1).to({rotation:606.9,x:170.4},0).wait(1).to({rotation:620.3,x:170.5,y:168.4},0).wait(1).to({rotation:633.3,x:170.6,y:168.5},0).wait(1).to({rotation:646,x:170.8},0).wait(1).to({rotation:658.3,y:168.6},0).wait(1).to({rotation:670.3,x:170.9},0).wait(1).to({rotation:681.9,x:171,y:168.7},0).wait(1).to({rotation:693.2,y:168.9},0).wait(1).to({rotation:704.1},0).wait(1).to({rotation:714.7,y:169},0).wait(1).to({rotation:725,x:170.9,y:169.1},0).wait(1).to({rotation:734.9,y:169.2},0).wait(1).to({rotation:744.4,x:170.8,y:169.3},0).wait(1).to({rotation:753.6},0).wait(1).to({rotation:762.5},0).wait(1).to({rotation:771,x:170.7,y:169.4},0).wait(1).to({rotation:779.1,x:170.6},0).wait(1).to({rotation:787},0).wait(1).to({rotation:794.4,x:170.5,y:169.5},0).wait(1).to({rotation:801.5,y:169.4},0).wait(1).to({rotation:808.3,x:170.4},0).wait(1).to({rotation:814.7,x:170.3},0).wait(1).to({rotation:820.8,y:169.3},0).wait(1).to({rotation:826.5},0).wait(1).to({rotation:831.9},0).wait(1).to({rotation:836.9,x:170.2},0).wait(1).to({rotation:841.6},0).wait(1).to({rotation:846,y:169.2},0).wait(1).to({rotation:850,x:170.1},0).wait(1).to({rotation:853.6},0).wait(1).to({rotation:856.9},0).wait(1).to({rotation:859.8,y:169.1},0).wait(1).to({rotation:862.4,y:169.2},0).wait(1).to({rotation:864.7,y:169.1},0).wait(1).to({rotation:866.6},0).wait(1).to({rotation:868.2,x:170},0).wait(1).to({rotation:869.4},0).wait(1).to({rotation:870.3,x:170.1},0).wait(1).to({rotation:870.8},0).wait(1).to({rotation:871,x:170},0).to({_off:true},1).wait(648));
+	this.timeline.addTween(cjs.Tween.get(this.wheel16).wait(1080).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:20,x:170.6,y:169},0).wait(1).to({rotation:43.7,x:170.7,y:169.1},0).wait(1).to({rotation:67,x:170.6,y:169.3},0).wait(1).to({rotation:90,x:170.5},0).wait(1).to({rotation:112.7,x:170.4,y:169.4},0).wait(1).to({rotation:135,x:170.3},0).wait(1).to({rotation:157,x:170.2},0).wait(1).to({rotation:178.6,x:170.1,y:169.3},0).wait(1).to({rotation:199.9,x:170,y:169.2},0).wait(1).to({rotation:220.9,y:169},0).wait(1).to({rotation:241.5,y:168.9},0).wait(1).to({rotation:261.8},0).wait(1).to({rotation:281.7,x:170.3,y:168.8},0).wait(1).to({rotation:301.3},0).wait(1).to({rotation:320.6,x:170.4},0).wait(1).to({rotation:339.5,x:170.5},0).wait(1).to({rotation:358.1,x:170.6,y:168.9},0).wait(1).to({rotation:376.3,y:169},0).wait(1).to({rotation:394.2,x:170.7,y:169.1},0).wait(1).to({rotation:411.7,x:170.6,y:169.2},0).wait(1).to({rotation:428.9,y:169.3},0).wait(1).to({rotation:445.8,x:170.5,y:169.4},0).wait(1).to({rotation:462.4,y:169.3},0).wait(1).to({rotation:478.5,x:170.3,y:169.4},0).wait(1).to({rotation:494.4},0).wait(1).to({rotation:509.9,x:170.2},0).wait(1).to({rotation:525.1,x:170.1,y:169.3},0).wait(1).to({rotation:539.9},0).wait(1).to({rotation:554.4,y:169.2},0).wait(1).to({rotation:568.5,x:170},0).wait(1).to({rotation:582.3,y:169},0).wait(1).to({rotation:595.8},0).wait(1).to({rotation:608.9,y:168.9},0).wait(1).to({rotation:621.7},0).wait(1).to({rotation:634.1,x:170.2,y:168.8},0).wait(1).to({rotation:646.2,x:170.3,y:168.7},0).wait(1).to({rotation:658,y:168.8},0).wait(1).to({rotation:669.4,x:170.4,y:168.7},0).wait(1).to({rotation:680.5},0).wait(1).to({rotation:691.2,y:168.8},0).wait(1).to({rotation:701.6,x:170.5},0).wait(1).to({rotation:711.6,x:170.6},0).wait(1).to({rotation:721.4,y:168.9},0).wait(1).to({rotation:730.7,y:169},0).wait(1).to({rotation:739.8},0).wait(1).to({rotation:748.5,y:169.1},0).wait(1).to({rotation:756.8},0).wait(1).to({rotation:764.8,y:169.2},0).wait(1).to({rotation:772.5,x:170.7},0).wait(1).to({rotation:779.8,x:170.6},0).wait(1).to({rotation:786.8,y:169.3},0).wait(1).to({rotation:793.4},0).wait(1).to({rotation:799.7},0).wait(1).to({rotation:805.7,x:170.5,y:169.4},0).wait(1).to({rotation:811.3,y:169.3},0).wait(1).to({rotation:816.6,x:170.4,y:169.4},0).wait(1).to({rotation:821.6,x:170.5,y:169.3},0).wait(1).to({rotation:826.2,x:170.4,y:169.4},0).wait(1).to({rotation:830.4},0).wait(1).to({rotation:834.3},0).wait(1).to({rotation:837.9},0).wait(1).to({rotation:841.2,x:170.3},0).wait(1).to({rotation:844.1},0).wait(1).to({rotation:846.6},0).wait(1).to({rotation:848.8},0).wait(1).to({rotation:850.7},0).wait(1).to({rotation:852.2},0).wait(1).to({rotation:853.4},0).wait(1).to({rotation:854.3},0).wait(1).to({rotation:854.8},0).wait(1).to({rotation:855},0).to({_off:true},1).wait(576));
+	this.timeline.addTween(cjs.Tween.get(this.wheel17).wait(1152).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:19.6,x:170.6,y:169},0).wait(1).to({rotation:42.8,y:169.2},0).wait(1).to({rotation:65.8,y:169.3},0).wait(1).to({rotation:88.4,x:170.5,y:169.4},0).wait(1).to({rotation:110.6,x:170.4,y:169.3},0).wait(1).to({rotation:132.6,x:170.3,y:169.4},0).wait(1).to({rotation:154.2,x:170.2,y:169.3},0).wait(1).to({rotation:175.4,x:170.1,y:169.2},0).wait(1).to({rotation:196.4,y:169.1},0).wait(1).to({rotation:217,x:170,y:169},0).wait(1).to({rotation:237.2,x:170.1},0).wait(1).to({rotation:257.1,x:170.2,y:168.9},0).wait(1).to({rotation:276.7,x:170.3,y:168.8},0).wait(1).to({rotation:296,y:168.7},0).wait(1).to({rotation:314.9,x:170.5,y:168.8},0).wait(1).to({rotation:333.5,x:170.6},0).wait(1).to({rotation:351.7,y:168.9},0).wait(1).to({rotation:369.7,y:169},0).wait(1).to({rotation:387.2,x:170.7,y:169.1},0).wait(1).to({rotation:404.5,y:169.2},0).wait(1).to({rotation:421.4,y:169.3},0).wait(1).to({rotation:438,x:170.6},0).wait(1).to({rotation:454.2,x:170.5},0).wait(1).to({rotation:470.1,x:170.4},0).wait(1).to({rotation:485.7,x:170.3},0).wait(1).to({rotation:500.9},0).wait(1).to({rotation:515.8,x:170.2},0).wait(1).to({rotation:530.4,x:170.1},0).wait(1).to({rotation:544.6,y:169.2},0).wait(1).to({rotation:558.5,y:169.1},0).wait(1).to({rotation:572.1},0).wait(1).to({rotation:585.3,y:169},0).wait(1).to({rotation:598.2,y:168.9},0).wait(1).to({rotation:610.8},0).wait(1).to({rotation:623,x:170.2,y:168.8},0).wait(1).to({rotation:634.9,x:170.3},0).wait(1).to({rotation:646.4},0).wait(1).to({rotation:657.6,x:170.4},0).wait(1).to({rotation:668.5,y:168.7},0).wait(1).to({rotation:679.1,x:170.5,y:168.8},0).wait(1).to({rotation:689.3},0).wait(1).to({rotation:699.1,x:170.6},0).wait(1).to({rotation:708.7},0).wait(1).to({rotation:717.9,y:168.9},0).wait(1).to({rotation:726.8,y:169},0).wait(1).to({rotation:735.3,x:170.7},0).wait(1).to({rotation:743.5,x:170.6},0).wait(1).to({rotation:751.4,y:169.1},0).wait(1).to({rotation:758.9},0).wait(1).to({rotation:766.1,y:169.2},0).wait(1).to({rotation:773},0).wait(1).to({rotation:779.5,y:169.3},0).wait(1).to({rotation:785.7},0).wait(1).to({rotation:791.6},0).wait(1).to({rotation:797.1},0).wait(1).to({rotation:802.3,x:170.5},0).wait(1).to({rotation:807.1,y:169.4},0).wait(1).to({rotation:811.7,y:169.3},0).wait(1).to({rotation:815.8},0).wait(1).to({rotation:819.7,x:170.4},0).wait(1).to({rotation:823.2,y:169.4},0).wait(1).to({rotation:826.4},0).wait(1).to({rotation:829.2,y:169.3},0).wait(1).to({rotation:831.7,y:169.4},0).wait(1).to({rotation:833.9},0).wait(1).to({rotation:835.8},0).wait(1).to({rotation:837.3},0).wait(1).to({rotation:838.5,x:170.3},0).wait(1).to({rotation:839.3,x:170.4},0).wait(1).to({rotation:839.8},0).wait(1).to({rotation:840},0).to({_off:true},1).wait(504));
+	this.timeline.addTween(cjs.Tween.get(this.wheel18).wait(1224).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:19.2,x:170.6,y:169},0).wait(1).to({rotation:42.1,x:170.7,y:169.2},0).wait(1).to({rotation:64.6,x:170.6,y:169.3},0).wait(1).to({rotation:86.8,x:170.5,y:169.4},0).wait(1).to({rotation:108.7,x:170.4},0).wait(1).to({rotation:130.3,x:170.3},0).wait(1).to({rotation:151.5,x:170.2,y:169.3},0).wait(1).to({rotation:172.5,x:170.1},0).wait(1).to({rotation:193,x:170,y:169.2},0).wait(1).to({rotation:213.3,y:169.1},0).wait(1).to({rotation:233.2,y:169},0).wait(1).to({rotation:252.8,y:168.9},0).wait(1).to({rotation:272.1,x:170.2,y:168.8},0).wait(1).to({rotation:291,y:168.7},0).wait(1).to({rotation:309.6,x:170.3,y:168.8},0).wait(1).to({rotation:327.9,x:170.5},0).wait(1).to({rotation:345.8},0).wait(1).to({rotation:363.5,x:170.6,y:168.9},0).wait(1).to({rotation:380.7,y:169},0).wait(1).to({rotation:397.7,y:169.1},0).wait(1).to({rotation:414.3,x:170.7,y:169.2},0).wait(1).to({rotation:430.6,x:170.6,y:169.3},0).wait(1).to({rotation:446.6,x:170.5,y:169.4},0).wait(1).to({rotation:462.2,y:169.3},0).wait(1).to({rotation:477.6,x:170.4,y:169.4},0).wait(1).to({rotation:492.5,x:170.3,y:169.3},0).wait(1).to({rotation:507.2,x:170.2,y:169.4},0).wait(1).to({rotation:521.5,x:170.1,y:169.3},0).wait(1).to({rotation:535.5},0).wait(1).to({rotation:549.2,x:170,y:169.2},0).wait(1).to({rotation:562.5},0).wait(1).to({rotation:575.5,y:169.1},0).wait(1).to({rotation:588.2,y:169},0).wait(1).to({rotation:600.6,y:168.9},0).wait(1).to({rotation:612.6,x:170.1},0).wait(1).to({rotation:624.3,y:168.8},0).wait(1).to({rotation:635.6,x:170.2},0).wait(1).to({rotation:646.6},0).wait(1).to({rotation:657.4,x:170.3},0).wait(1).to({rotation:667.7,x:170.4},0).wait(1).to({rotation:677.8,y:168.7},0).wait(1).to({rotation:687.5,x:170.5},0).wait(1).to({rotation:696.9,y:168.8},0).wait(1).to({rotation:705.9,x:170.6},0).wait(1).to({rotation:714.7},0).wait(1).to({rotation:723.1,y:168.9},0).wait(1).to({rotation:731.1,y:169},0).wait(1).to({rotation:738.9},0).wait(1).to({rotation:746.3},0).wait(1).to({rotation:753.3,y:169.1},0).wait(1).to({rotation:760.1,y:169.2},0).wait(1).to({rotation:766.5},0).wait(1).to({rotation:772.6},0).wait(1).to({rotation:778.4},0).wait(1).to({rotation:783.8},0).wait(1).to({rotation:788.9,y:169.3},0).wait(1).to({rotation:793.7},0).wait(1).to({rotation:798.1,x:170.5},0).wait(1).to({rotation:802.2,x:170.6},0).wait(1).to({rotation:806,x:170.5,y:169.4},0).wait(1).to({rotation:809.5},0).wait(1).to({rotation:812.6,y:169.3},0).wait(1).to({rotation:815.4},0).wait(1).to({rotation:817.9,y:169.4},0).wait(1).to({rotation:820,y:169.3},0).wait(1).to({rotation:821.8},0).wait(1).to({rotation:823.3,y:169.4},0).wait(1).to({rotation:824.5,x:170.4},0).wait(1).to({rotation:825.3},0).wait(1).to({rotation:825.8},0).wait(1).to({rotation:826,x:170.5},0).to({_off:true},1).wait(432));
+	this.timeline.addTween(cjs.Tween.get(this.wheel19).wait(1296).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:18.7,x:170.6,y:169},0).wait(1).to({rotation:41.2,y:169.2},0).wait(1).to({rotation:63.4,y:169.3},0).wait(1).to({rotation:85.2,x:170.5,y:169.4},0).wait(1).to({rotation:106.7},0).wait(1).to({rotation:127.9,x:170.3},0).wait(1).to({rotation:148.7,x:170.2},0).wait(1).to({rotation:169.3,x:170.1,y:169.3},0).wait(1).to({rotation:189.5,x:170,y:169.2},0).wait(1).to({rotation:209.4,y:169.1},0).wait(1).to({rotation:228.9,y:169},0).wait(1).to({rotation:248.2,y:168.9},0).wait(1).to({rotation:267.1,x:170.1,y:168.8},0).wait(1).to({rotation:285.7,x:170.2},0).wait(1).to({rotation:303.9,x:170.3,y:168.7},0).wait(1).to({rotation:321.9,x:170.5,y:168.8},0).wait(1).to({rotation:339.5},0).wait(1).to({rotation:356.8,x:170.6},0).wait(1).to({rotation:373.8,y:169},0).wait(1).to({rotation:390.4,y:169.1},0).wait(1).to({rotation:406.8,y:169.2},0).wait(1).to({rotation:422.8},0).wait(1).to({rotation:438.5,x:170.5,y:169.4},0).wait(1).to({rotation:453.8,y:169.3},0).wait(1).to({rotation:468.9,x:170.4,y:169.4},0).wait(1).to({rotation:483.6},0).wait(1).to({rotation:498,x:170.3},0).wait(1).to({rotation:512,x:170.2},0).wait(1).to({rotation:525.8,x:170.1,y:169.3},0).wait(1).to({rotation:539.2,y:169.2},0).wait(1).to({rotation:552.3,x:170},0).wait(1).to({rotation:565.1,y:169.1},0).wait(1).to({rotation:577.5},0).wait(1).to({rotation:589.6,y:169},0).wait(1).to({rotation:601.4},0).wait(1).to({rotation:612.9,x:170.1,y:168.9},0).wait(1).to({rotation:624.1,y:168.8},0).wait(1).to({rotation:634.9,x:170.2},0).wait(1).to({rotation:645.4,x:170.3,y:168.7},0).wait(1).to({rotation:655.6,y:168.8},0).wait(1).to({rotation:665.4,x:170.4},0).wait(1).to({rotation:675,y:168.7},0).wait(1).to({rotation:684.2},0).wait(1).to({rotation:693.1,x:170.5,y:168.8},0).wait(1).to({rotation:701.7,x:170.6},0).wait(1).to({rotation:709.9},0).wait(1).to({rotation:717.8,y:168.9},0).wait(1).to({rotation:725.4,y:169},0).wait(1).to({rotation:732.7},0).wait(1).to({rotation:739.7},0).wait(1).to({rotation:746.3,x:170.7,y:169.1},0).wait(1).to({rotation:752.6,x:170.6},0).wait(1).to({rotation:758.6},0).wait(1).to({rotation:764.2,x:170.7},0).wait(1).to({rotation:769.6,x:170.6,y:169.2},0).wait(1).to({rotation:774.6},0).wait(1).to({rotation:779.3},0).wait(1).to({rotation:783.6,y:169.3},0).wait(1).to({rotation:787.7},0).wait(1).to({rotation:791.4},0).wait(1).to({rotation:794.8},0).wait(1).to({rotation:797.9},0).wait(1).to({rotation:800.6,x:170.5},0).wait(1).to({rotation:803,x:170.6},0).wait(1).to({rotation:805.1,x:170.5,y:169.4},0).wait(1).to({rotation:806.9},0).wait(1).to({rotation:808.4},0).wait(1).to({rotation:809.5},0).wait(1).to({rotation:810.3,y:169.3},0).wait(1).to({rotation:810.8},0).wait(1).to({rotation:811},0).to({_off:true},1).wait(360));
+	this.timeline.addTween(cjs.Tween.get(this.wheel20).wait(1368).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:18.3,x:170.6,y:169},0).wait(1).to({rotation:40.3,y:169.2},0).wait(1).to({rotation:62.1,y:169.3},0).wait(1).to({rotation:83.4,x:170.5},0).wait(1).to({rotation:104.5,x:170.4,y:169.4},0).wait(1).to({rotation:125.3},0).wait(1).to({rotation:145.7,x:170.2,y:169.3},0).wait(1).to({rotation:165.9,x:170.1},0).wait(1).to({rotation:185.7,y:169.2},0).wait(1).to({rotation:205.2,y:169.1},0).wait(1).to({rotation:224.4,x:170,y:169},0).wait(1).to({rotation:243.2,x:170.2,y:168.9},0).wait(1).to({rotation:261.8},0).wait(1).to({rotation:280,x:170.3,y:168.8},0).wait(1).to({rotation:297.9,x:170.4,y:168.7},0).wait(1).to({rotation:315.5,x:170.5,y:168.8},0).wait(1).to({rotation:332.8,x:170.6},0).wait(1).to({rotation:349.7,y:168.9},0).wait(1).to({rotation:366.4,y:169},0).wait(1).to({rotation:382.7,y:169.1},0).wait(1).to({rotation:398.7,x:170.7},0).wait(1).to({rotation:414.4,x:170.6,y:169.2},0).wait(1).to({rotation:429.8,y:169.3},0).wait(1).to({rotation:444.8,x:170.5},0).wait(1).to({rotation:459.6,x:170.4},0).wait(1).to({rotation:474,y:169.4},0).wait(1).to({rotation:488.1,x:170.3},0).wait(1).to({rotation:501.9,y:169.3},0).wait(1).to({rotation:515.4,x:170.2},0).wait(1).to({rotation:528.5,x:170.1},0).wait(1).to({rotation:541.4,y:169.2},0).wait(1).to({rotation:553.9},0).wait(1).to({rotation:566.1,y:169.1},0).wait(1).to({rotation:578,y:169},0).wait(1).to({rotation:589.5},0).wait(1).to({rotation:600.8,y:168.9},0).wait(1).to({rotation:611.7,x:170.2},0).wait(1).to({rotation:622.3,y:168.8},0).wait(1).to({rotation:632.7},0).wait(1).to({rotation:642.6,x:170.3},0).wait(1).to({rotation:652.3},0).wait(1).to({rotation:661.7,x:170.4},0).wait(1).to({rotation:670.7,y:168.7},0).wait(1).to({rotation:679.4,x:170.5,y:168.8},0).wait(1).to({rotation:687.8,x:170.6},0).wait(1).to({rotation:695.9},0).wait(1).to({rotation:703.7},0).wait(1).to({rotation:711.1,y:168.9},0).wait(1).to({rotation:718.2},0).wait(1).to({rotation:725.1,y:169},0).wait(1).to({rotation:731.6},0).wait(1).to({rotation:737.7},0).wait(1).to({rotation:743.6,y:169.1},0).wait(1).to({rotation:749.2,x:170.7},0).wait(1).to({rotation:754.4,x:170.6,y:169.2},0).wait(1).to({rotation:759.3,x:170.7,y:169.1},0).wait(1).to({rotation:763.9,y:169.2},0).wait(1).to({rotation:768.2},0).wait(1).to({rotation:772.1,x:170.6},0).wait(1).to({rotation:775.8},0).wait(1).to({rotation:779.1},0).wait(1).to({rotation:782.1},0).wait(1).to({rotation:784.8,y:169.3},0).wait(1).to({rotation:787.2},0).wait(1).to({rotation:789.2},0).wait(1).to({rotation:791},0).wait(1).to({rotation:792.4},0).wait(1).to({rotation:793.5},0).wait(1).to({rotation:794.3},0).wait(1).to({rotation:794.8,x:170.5},0).wait(1).to({rotation:795,x:170.6},0).to({_off:true},1).wait(288));
+	this.timeline.addTween(cjs.Tween.get(this.wheel21).wait(1440).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:17.9,x:170.5,y:169},0).wait(1).to({rotation:39.5,y:169.1},0).wait(1).to({rotation:60.8,y:169.2},0).wait(1).to({rotation:81.8,x:170.4,y:169.3},0).wait(1).to({rotation:102.5,y:169.4},0).wait(1).to({rotation:122.9,x:170.3},0).wait(1).to({rotation:142.9,x:170.1},0).wait(1).to({rotation:162.7,x:170,y:169.3},0).wait(1).to({rotation:182.1,x:169.9},0).wait(1).to({rotation:201.3,y:169.2},0).wait(1).to({rotation:220.1,y:169.1},0).wait(1).to({rotation:238.6,y:169},0).wait(1).to({rotation:256.8,y:168.9},0).wait(1).to({rotation:274.7,x:170.1,y:168.8},0).wait(1).to({rotation:292.2,x:170.2},0).wait(1).to({rotation:309.5,x:170.3},0).wait(1).to({rotation:326.4,y:168.7},0).wait(1).to({rotation:343.1,x:170.5,y:168.8},0).wait(1).to({rotation:359.4,y:168.9},0).wait(1).to({rotation:375.4,y:169},0).wait(1).to({rotation:391.1,y:169.1},0).wait(1).to({rotation:406.5,x:170.6,y:169.2},0).wait(1).to({rotation:421.6,x:170.5,y:169.3},0).wait(1).to({rotation:436.4},0).wait(1).to({rotation:450.9,x:170.4,y:169.4},0).wait(1).to({rotation:465,x:170.3},0).wait(1).to({rotation:478.9},0).wait(1).to({rotation:492.4,x:170.2},0).wait(1).to({rotation:505.6,x:170.1},0).wait(1).to({rotation:518.5,y:169.3},0).wait(1).to({rotation:531.1,x:170},0).wait(1).to({rotation:543.4,y:169.2},0).wait(1).to({rotation:555.4,x:169.9},0).wait(1).to({rotation:567,y:169.1},0).wait(1).to({rotation:578.4},0).wait(1).to({rotation:589.4,y:169},0).wait(1).to({rotation:600.2,y:168.9},0).wait(1).to({rotation:610.6,x:170},0).wait(1).to({rotation:620.7,y:168.8},0).wait(1).to({rotation:630.5,x:170.1},0).wait(1).to({rotation:640},0).wait(1).to({rotation:649.2,x:170.2},0).wait(1).to({rotation:658},0).wait(1).to({rotation:666.6,x:170.3,y:168.7},0).wait(1).to({rotation:674.8},0).wait(1).to({rotation:682.8},0).wait(1).to({rotation:690.4,x:170.4},0).wait(1).to({rotation:697.7,y:168.8},0).wait(1).to({rotation:704.7},0).wait(1).to({rotation:711.4,x:170.5},0).wait(1).to({rotation:717.8,y:168.9},0).wait(1).to({rotation:723.8,x:170.4},0).wait(1).to({rotation:729.6,x:170.5,y:169},0).wait(1).to({rotation:735},0).wait(1).to({rotation:740.1},0).wait(1).to({rotation:745,x:170.6},0).wait(1).to({rotation:749.5,x:170.5,y:169.1},0).wait(1).to({rotation:753.7,x:170.6},0).wait(1).to({rotation:757.6,x:170.5},0).wait(1).to({rotation:761.1,x:170.6},0).wait(1).to({rotation:764.4,x:170.5},0).wait(1).to({rotation:767.4,x:170.6,y:169.2},0).wait(1).to({rotation:770,x:170.5},0).wait(1).to({rotation:772.3},0).wait(1).to({rotation:774.4},0).wait(1).to({rotation:776.1},0).wait(1).to({rotation:777.5},0).wait(1).to({rotation:778.6},0).wait(1).to({rotation:779.3},0).wait(1).to({rotation:779.8},0).wait(1).to({rotation:780,y:169.3},0).to({_off:true},1).wait(216));
+	this.timeline.addTween(cjs.Tween.get(this.wheel22).wait(1512).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:17.5,x:170.6,y:169},0).wait(1).to({rotation:38.7,y:169.1},0).wait(1).to({rotation:59.6,y:169.3},0).wait(1).to({rotation:80.2},0).wait(1).to({rotation:100.5,x:170.5},0).wait(1).to({rotation:120.4,x:170.3,y:169.4},0).wait(1).to({rotation:140.1,y:169.3},0).wait(1).to({rotation:159.5,x:170.2},0).wait(1).to({rotation:178.6,x:170.1,y:169.2},0).wait(1).to({rotation:197.3,y:169.1},0).wait(1).to({rotation:215.8},0).wait(1).to({rotation:233.9,x:170,y:168.9},0).wait(1).to({rotation:251.8,x:170.2},0).wait(1).to({rotation:269.3,y:168.8},0).wait(1).to({rotation:286.6,x:170.3},0).wait(1).to({rotation:303.5,x:170.4},0).wait(1).to({rotation:320.1,x:170.5},0).wait(1).to({rotation:336.4,x:170.6,y:168.9},0).wait(1).to({rotation:352.5,x:170.7},0).wait(1).to({rotation:368.2,x:170.6,y:169},0).wait(1).to({rotation:383.6,x:170.7,y:169.1},0).wait(1).to({rotation:398.7,x:170.6,y:169.2},0).wait(1).to({rotation:413.5},0).wait(1).to({rotation:428,y:169.3},0).wait(1).to({rotation:442.2},0).wait(1).to({rotation:456,x:170.5},0).wait(1).to({rotation:469.6,x:170.4,y:169.4},0).wait(1).to({rotation:482.9},0).wait(1).to({rotation:495.9,x:170.2,y:169.3},0).wait(1).to({rotation:508.5},0).wait(1).to({rotation:520.9,x:170.1},0).wait(1).to({rotation:532.9,y:169.2},0).wait(1).to({rotation:544.7},0).wait(1).to({rotation:556.1},0).wait(1).to({rotation:567.3,y:169.1},0).wait(1).to({rotation:578.1,y:169},0).wait(1).to({rotation:588.6},0).wait(1).to({rotation:598.8,y:168.9},0).wait(1).to({rotation:608.7},0).wait(1).to({rotation:618.4,x:170.2,y:168.8},0).wait(1).to({rotation:627.7},0).wait(1).to({rotation:636.7,x:170.3},0).wait(1).to({rotation:645.4},0).wait(1).to({rotation:653.8,x:170.4},0).wait(1).to({rotation:661.8},0).wait(1).to({rotation:669.6,x:170.5},0).wait(1).to({rotation:677.1},0).wait(1).to({rotation:684.3},0).wait(1).to({rotation:691.1},0).wait(1).to({rotation:697.7,x:170.6},0).wait(1).to({rotation:703.9},0).wait(1).to({rotation:709.9,x:170.7,y:168.9},0).wait(1).to({rotation:715.5},0).wait(1).to({rotation:720.9,y:169},0).wait(1).to({rotation:725.9,x:170.6},0).wait(1).to({rotation:730.6},0).wait(1).to({rotation:735.1},0).wait(1).to({rotation:739.2,y:169.1},0).wait(1).to({rotation:743,x:170.7},0).wait(1).to({rotation:746.5,x:170.6},0).wait(1).to({rotation:749.7},0).wait(1).to({rotation:752.6,x:170.7},0).wait(1).to({rotation:755.2,y:169.2},0).wait(1).to({rotation:757.5},0).wait(1).to({rotation:759.5,x:170.6},0).wait(1).to({rotation:761.1},0).wait(1).to({rotation:762.5},0).wait(1).to({rotation:763.6},0).wait(1).to({rotation:764.3},0).wait(1).to({rotation:764.8},0).wait(1).to({rotation:765,x:170.7},0).to({_off:true},1).wait(144));
+	this.timeline.addTween(cjs.Tween.get(this.wheel23).wait(1584).to({_off:false},0).wait(1).to({regX:168.8,regY:168.9,rotation:17,x:170.6,y:169},0).wait(1).to({rotation:37.8,y:169.1},0).wait(1).to({rotation:58.3,y:169.3},0).wait(1).to({rotation:78.4},0).wait(1).to({rotation:98.3,x:170.5,y:169.4},0).wait(1).to({rotation:117.8,x:170.4},0).wait(1).to({rotation:137.1,x:170.2},0).wait(1).to({rotation:156.1,y:169.3},0).wait(1).to({rotation:174.8,x:170.1},0).wait(1).to({rotation:193.1,x:170,y:169.2},0).wait(1).to({rotation:211.2,y:169.1},0).wait(1).to({rotation:229,y:169},0).wait(1).to({rotation:246.5,x:170.1,y:168.9},0).wait(1).to({rotation:263.6},0).wait(1).to({rotation:280.5,x:170.2,y:168.8},0).wait(1).to({rotation:297.1,x:170.3},0).wait(1).to({rotation:313.4,x:170.4,y:168.7},0).wait(1).to({rotation:329.4,x:170.5,y:168.8},0).wait(1).to({rotation:345,x:170.6},0).wait(1).to({rotation:360.4,y:168.9},0).wait(1).to({rotation:375.5,y:169},0).wait(1).to({rotation:390.3,y:169.1},0).wait(1).to({rotation:404.8,y:169.2},0).wait(1).to({rotation:419},0).wait(1).to({rotation:432.9,y:169.3},0).wait(1).to({rotation:446.5,x:170.5,y:169.4},0).wait(1).to({rotation:459.8},0).wait(1).to({rotation:472.8,x:170.4},0).wait(1).to({rotation:485.5,x:170.3},0).wait(1).to({rotation:497.9,y:169.3},0).wait(1).to({rotation:510,x:170.2,y:169.4},0).wait(1).to({rotation:521.8},0).wait(1).to({rotation:533.3,x:170.1,y:169.3},0).wait(1).to({rotation:544.5,x:170,y:169.2},0).wait(1).to({rotation:555.4},0).wait(1).to({rotation:566,y:169.1},0).wait(1).to({rotation:576.3},0).wait(1).to({rotation:586.3},0).wait(1).to({rotation:596,y:169},0).wait(1).to({rotation:605.4,x:170.1,y:168.9},0).wait(1).to({rotation:614.5,x:170},0).wait(1).to({rotation:623.3,x:170.1},0).wait(1).to({rotation:631.8,x:170.2,y:168.8},0).wait(1).to({rotation:640.1},0).wait(1).to({rotation:648},0).wait(1).to({rotation:655.6,x:170.3,y:168.7},0).wait(1).to({rotation:662.9,x:170.4,y:168.8},0).wait(1).to({rotation:669.9},0).wait(1).to({rotation:676.7,y:168.7},0).wait(1).to({rotation:683.1,y:168.8},0).wait(1).to({rotation:689.2,x:170.5},0).wait(1).to({rotation:695},0).wait(1).to({rotation:700.6},0).wait(1).to({rotation:705.8,x:170.6},0).wait(1).to({rotation:710.7,y:168.9},0).wait(1).to({rotation:715.3},0).wait(1).to({rotation:719.7},0).wait(1).to({rotation:723.7,y:169},0).wait(1).to({rotation:727.4,y:168.9},0).wait(1).to({rotation:730.9},0).wait(1).to({rotation:734,y:169},0).wait(1).to({rotation:736.9},0).wait(1).to({rotation:739.4},0).wait(1).to({rotation:741.6},0).wait(1).to({rotation:743.6},0).wait(1).to({rotation:745.2},0).wait(1).to({rotation:746.6},0).wait(1).to({rotation:747.6},0).wait(1).to({rotation:748.4,y:169.1},0).wait(1).to({rotation:748.8},0).wait(1).to({rotation:749,y:169},0).to({_off:true},1).wait(72));
+	this.timeline.addTween(cjs.Tween.get(this.wheel24).wait(1656).to({_off:false},0).wait(1).to({regX:168.8,rotation:16.6,x:170.8,y:169.2},0).wait(1).to({rotation:37},0).wait(1).to({rotation:57.1,x:170.7,y:169.3},0).wait(1).to({rotation:76.9,x:170.6},0).wait(1).to({rotation:96.4,x:170.5},0).wait(1).to({rotation:115.6,x:170.4},0).wait(1).to({rotation:134.5,y:169.2},0).wait(1).to({rotation:153.1,x:170.3,y:169.1},0).wait(1).to({rotation:171.4,y:169},0).wait(1).to({rotation:189.5},0).wait(1).to({rotation:207.2,y:168.9},0).wait(1).to({rotation:224.6,x:170.4},0).wait(1).to({rotation:241.8,y:168.8},0).wait(1).to({rotation:258.7,x:170.5},0).wait(1).to({rotation:275.2,x:170.6,y:168.7},0).wait(1).to({rotation:291.5,x:170.7,y:168.8},0).wait(1).to({rotation:307.5,x:170.8},0).wait(1).to({rotation:323.2,y:168.9},0).wait(1).to({rotation:338.6},0).wait(1).to({rotation:353.7,y:169},0).wait(1).to({rotation:368.5,y:169.1},0).wait(1).to({rotation:383,y:169.2},0).wait(1).to({rotation:397.2},0).wait(1).to({rotation:411.1,x:170.7},0).wait(1).to({rotation:424.8,y:169.3},0).wait(1).to({rotation:438.1,x:170.6},0).wait(1).to({rotation:451.1,x:170.5,y:169.2},0).wait(1).to({rotation:463.9,y:169.3},0).wait(1).to({rotation:476.4,x:170.4,y:169.2},0).wait(1).to({rotation:488.5},0).wait(1).to({rotation:500.4},0).wait(1).to({rotation:512,x:170.3},0).wait(1).to({rotation:523.3,y:169.1},0).wait(1).to({rotation:534.3,y:169},0).wait(1).to({rotation:545},0).wait(1).to({rotation:555.4},0).wait(1).to({rotation:565.5,y:168.9},0).wait(1).to({rotation:575.3},0).wait(1).to({rotation:584.8,x:170.4,y:168.8},0).wait(1).to({rotation:594.1},0).wait(1).to({rotation:603},0).wait(1).to({rotation:611.7,x:170.5,y:168.7},0).wait(1).to({rotation:620,y:168.8},0).wait(1).to({rotation:628.1},0).wait(1).to({rotation:635.9,x:170.6},0).wait(1).to({rotation:643.3,x:170.7},0).wait(1).to({rotation:650.5},0).wait(1).to({rotation:657.4},0).wait(1).to({rotation:664},0).wait(1).to({rotation:670.3,x:170.8},0).wait(1).to({rotation:676.3,y:168.9},0).wait(1).to({rotation:682,y:168.8},0).wait(1).to({rotation:687.5,y:168.9},0).wait(1).to({rotation:692.6},0).wait(1).to({rotation:697.4},0).wait(1).to({rotation:702},0).wait(1).to({rotation:706.2,y:169},0).wait(1).to({rotation:710.2,x:170.9},0).wait(1).to({rotation:713.8},0).wait(1).to({rotation:717.2},0).wait(1).to({rotation:720.3,x:170.8,y:169.1},0).wait(1).to({rotation:723.1},0).wait(1).to({rotation:725.6},0).wait(1).to({rotation:727.8},0).wait(1).to({rotation:729.7},0).wait(1).to({rotation:731.3},0).wait(1).to({rotation:732.6},0).wait(1).to({rotation:733.6},0).wait(1).to({rotation:734.4},0).wait(1).to({rotation:734.8},0).wait(1).to({rotation:735},0).wait(1));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-9.3,-11.2,360.4,360.3);
+// stage content:
+(lib.wof = function(mode,startPosition,loop) {
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
+	// timeline functions:
+	this.frame_0 = function() {
+		var _this=this;
+		_this.btn_spin.addEventListener("click",clickFunction);
+		//function random(min, max) {
+		    //return Math.floor(Math.random() * (max - min + 1)) + min;
+		//}
+		
+        <%random = @game.get_wheel_reward%>
+		var randnum = <%=random%>; //random(0,23);
+		function clickFunction(){
+		_this.wheel.gotoAndPlay("spin"+randnum);
+		<% if random!=12&&random!=14&&random!=16&&random!=22 %> 
+		_this.btn_spin.removeEventListener("click",clickFunction);
+		<%@game.reward=@game.wheel[random]%>
+		<%@game.spin_counter+=1%>
+		<%@game.set_spin_analysis%>
+		<%@game.spin_flag = true%>
+		  <%else%>
+		       <%@game.spin random%>
+		       <%random=rand(11)%>
+		       <%@game.reward=@game.wheel[random]%>
+		       <%@game.spin_counter+=1%>
+		       <%@game.set_spin_analysis%>
+		       randnum = <%=random%>;
+		  <%end%>
+		}
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+	// spin
+	this.btn_spin = new lib.btn_spin();
+	this.btn_spin.name = "btn_spin";
+	this.btn_spin.parent = this;
+	this.btn_spin.setTransform(760.3,649.8,1.617,1.617,0,0,0,54.3,24.2);
+	new cjs.ButtonHelper(this.btn_spin, 0, 1, 2);
+	this.timeline.addTween(cjs.Tween.get(this.btn_spin).wait(1));
+	// arrow
+	this.instance = new lib.arrow("synched",0);
+	this.instance.parent = this;
+	this.instance.setTransform(446.9,51.7,2.268,2.268,0,0,0,23.9,16.4);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	// frame
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#663300").ss(26,1,1).p("EAxgAAAQAAMPlMKHQifE3jsEXQgGAHgGAHQhZBphlBkQhKBLhMBEQghAdghAcQhVBHhXBBQsjJRwYAAQyKAAtdrZQhvhehqhqQnjnjjppOQhejwg0kBQhBlCAAlbQAAgeABgeQAHmfBkl4QAsigA7iaQDppOHjnlQOgufUgAAQQYAAMjJPQB5BaB1BoQBMBEBKBKQBRBRBKBUQASAUARAVQAGAGAGAHQDsEXCfE3QCOEWBREuQBkF4AJGfQAAAeAAAeg");
+	this.shape.setTransform(446.7,344.7);
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	// wheel
+	this.wheel = new lib.wheel();
+	this.wheel.name = "wheel";
+	this.wheel.parent = this;
+	this.wheel.setTransform(446.6,345.9,1.931,1.931,0,0,0,170.6,169.6);
+	this.timeline.addTween(cjs.Tween.get(this.wheel).wait(1));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(549,346.7,750,696);
+// library properties:
+lib.properties = {
+	id: '19AE9543AF3CD44581C36A9523904476',
+	width: 900,
+	height: 700,
+	fps: 24,
+	color: "#FFFFFF",
+	opacity: 1.00,
+	manifest: [
+		{src:"images/Wheel.png", id:"Wheel"}
+	],
+	preloads: []
+};
+// bootstrap callback support:
+(lib.Stage = function(canvas) {
+	createjs.Stage.call(this, canvas);
+}).prototype = p = new createjs.Stage();
+p.setAutoPlay = function(autoPlay) {
+	this.tickEnabled = autoPlay;
+}
+p.play = function() { this.tickEnabled = true; this.getChildAt(0).gotoAndPlay(this.getTimelinePosition()) }
+p.stop = function(ms) { if(ms) this.seek(ms); this.tickEnabled = false; }
+p.seek = function(ms) { this.tickEnabled = true; this.getChildAt(0).gotoAndStop(lib.properties.fps * ms / 1000); }
+p.getDuration = function() { return this.getChildAt(0).totalFrames / lib.properties.fps * 1000; }
+p.getTimelinePosition = function() { return this.getChildAt(0).currentFrame / lib.properties.fps * 1000; }
+an.bootcompsLoaded = an.bootcompsLoaded || [];
+if(!an.bootstrapListeners) {
+	an.bootstrapListeners=[];
+}
+an.bootstrapCallback=function(fnCallback) {
+	an.bootstrapListeners.push(fnCallback);
+	if(an.bootcompsLoaded.length > 0) {
+		for(var i=0; i<an.bootcompsLoaded.length; ++i) {
+			fnCallback(an.bootcompsLoaded[i]);
+		}
+	}
+};
+an.compositions = an.compositions || {};
+an.compositions['19AE9543AF3CD44581C36A9523904476'] = {
+	getStage: function() { return exportRoot.getStage(); },
+	getLibrary: function() { return lib; },
+	getSpriteSheet: function() { return ss; },
+	getImages: function() { return img; }
+};
+an.compositionLoaded = function(id) {
+	an.bootcompsLoaded.push(id);
+	for(var j=0; j<an.bootstrapListeners.length; j++) {
+		an.bootstrapListeners[j](id);
+	}
+}
+an.getComposition = function(id) {
+	return an.compositions[id];
+}
+})(createjs = createjs||{}, AdobeAn = AdobeAn||{});
+var createjs, AdobeAn;
+</script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("19AE9543AF3CD44581C36A9523904476");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.wof();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	function makeResponsive(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+					sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
+			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;            
+			stage.tickOnUpdate = false;            
+			stage.update();            
+			stage.tickOnUpdate = true;		
+		}
+	}
+	makeResponsive(true,'both',false,1);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+<!-- write your code here -->
+</head>
+<body onload="init();" style="margin:0px;">
+	<div id="animation_container" style="width:900px; height:700px">
+		<canvas id="canvas" width="900" height="700" style="position: absolute; display: block;"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:900px; height:700px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+</body>
+</html>

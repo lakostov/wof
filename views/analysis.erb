@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/style.css" />
+<title>Wheel Of Fortune</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="exit">
+	<a id="btn_exit" href="/">X</a>
+    </div>
+	<h1 class="gray">WHEEL OF FORTUNE</h1>
+	<div id="analysis">
+    <% if @game.game_analysis.empty? %>
+    <h2>How to play:</h2>
+    <ul>
+    	<li>You have 5 turns to solve the puzzle.</li>
+    	<li>Spin the wheel to get reward points and try to guess a letter.</li>
+    	<li>Or if you think you can, try to solve the puzzle.</li>
+        <li>Get reward for every guessed letter.</li>
+        <li>Win extra 2000 point if you solve the puzzle.</li>
+    	<li>One turn is taken for every wrong guess.</li>
+    </ul>
+    <span>Good luck!</span>
+    <% else %>
+     <h2>Game Analysis:</h2>
+     <table>
+     	<tr><td>Current state:</td><td><%=@game.resulta %></td></tr>
+     	<tr><td>Clue:</td><td><%=@game.secret_clue %></td></tr>
+     	<tr><td>Number of words:</td><td><%=@game.num_words %></td></tr>
+        <tr><td class="key" colspan="2">Steps taken:</td></tr>
+        <% @game.game_analysis.each do |key, value| %>
+        <% if key.start_with?("Spin") %>
+        <tr><td class="key" colspan="2">Spin:</td></tr>
+        <% else %>
+        <tr><td class="key" colspan="2"><%=key%></td></tr>
+        <% end %>
+        <% value.each do |k, v| %>
+        <tr><td><%=k%></td><td><%=v%></td></tr>
+        <% end %>
+        <% end %>
+    </table>
+    <% end %>
+    <a class="btn_game_menu" href="/">BACK TO MENU</a>
+    </div>
+</div>
+</body>
+
+</html>

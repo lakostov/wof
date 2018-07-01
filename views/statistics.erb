@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/style.css" />
+<script src="/Chart.js"></script>
+<title>Wheel Of Fortune</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="exit">
+	<a id="btn_exit" href="/">X</a>
+    </div>
+	<h1 class="gray">WHEEL OF FORTUNE</h1>
+	<h2>Statistics</h2>
+<div id="statistics">
+<ul>
+	<li>Games played: <%=$games_payed%></li>
+	<li>Games won: <%=$games_won %></li>
+	<li>Accumulated score: <%=$total_score %></li>
+	<% if $games_payed > 0 %>
+	<li>Success rate: <%=(($games_won.to_f / $games_payed.to_f)*100).round(1)%>%</li>
+	<% end %>
+</ul>
+</div>
+<canvas id="myChart" class="myChart" style="display: block; height: 103px; width: 336px;margin-bottom: 20px;"></canvas>
+<script>
+new Chart(document.getElementById("myChart"),{"type":"doughnut","data":{"labels":["Games lost","Games won"],"datasets":[{"label":"Game statistics","data":[<%=$games_payed-$games_won%>,<%=$games_won %>],"backgroundColor":["rgb(255, 99, 132)","rgb(255, 205, 86)"]}]}});
+Chart.defaults.global.defaultFontColor = '#fff';
+</script>
+</div>
+</body>
+
+</html>
